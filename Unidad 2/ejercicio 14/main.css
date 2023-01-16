@@ -1,0 +1,57 @@
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+}
+
+img {
+    width: 10%;
+}
+
+#ten {
+    margin: auto;
+    display: block;
+    position: relative;
+    
+}
+
+#as {
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 8em;
+    left: 2em;
+
+}
+
+#j {
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 16em;
+    left: 4em;
+}
+
+#q {
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 24em;
+    left: 6em;
+}
+
+#k {
+    margin: auto;
+    display: block;
+    position: relative;
+    bottom: 32em;
+    left: 8em;
+}
+
+img:hover{
+    border: .5em solid red ;
+}
+
+img:active{
+    z-index: 1;
+}

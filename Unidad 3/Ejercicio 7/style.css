@@ -1,0 +1,16 @@
+body{
+    background: 
+        url(imagen1.png) 20% 20%  no-repeat,
+        url(imagen2.png) 50% 80% no-repeat,
+        url(fondo.jpg) 0 0 no-repeat;
+    background-size: 5%, 15%, cover;
+}
+
+.fondo{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+

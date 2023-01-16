@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>ejercicio14</title>
+</head>
+<body>
+	<form action="somewhere.php" method="get">
+		<p>
+			<label for="nombre">Nombre:</label>
+			<input type="text" name="nombre"/>
+		</p>
+		<p>
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" name="apellidos" size="25" />
+		</p>
+		<p>
+			<label for="email">Correo electrónico:</label>
+			<input type="text" name="email" size="30" />
+		</p>
+		<p>
+			<label for="poblacion">Población:</label>
+			<input type="text" name="poblacion" size="13" />
+		</p>
+		<p>
+			<label for="provincia">Provincia:</label>
+			<input type="text" name="provincia" size="13" />
+		</p>
+		<table>
+			<tr>
+				<td>Edad</td>
+				<td>¿Cómo nos conociste?</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="edad" value="0-20"/>0-20</td>
+				<td><input type="checkbox" name="fuente" value="amigo">A través de un amigo</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="edad" value="20-40"/>20-40</td>
+				<td><input type="checkbox" name="fuente" value="buscador">A través de un buscador.</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="edad" value="40-60"/>40-60</td>
+				<td><input type="checkbox" name="fuente" value="navegando">Navengando por la red.</td>
+			</tr>
+			<tr>
+				<td><input type="radio" name="edad" value="60-100"/>60-100</td>
+				<td><input type="checkbox" name="fuente" value="otros">Otros</td>
+			</tr>
+			<tr>
+				<td><input type="submit" name="send" value="Enviar formulario"></td>
+				<td><input type="reset" name="clear" value="Borrar formulario"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

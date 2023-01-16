@@ -1,0 +1,236 @@
+<html>
+<head>
+    <title>Ejercicio 17</title>
+    <link rel="stylesheet" href="main.css">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+</head>
+<body>
+    <h3>HOJA DE INSCRIPCIÓN <br/> EN LOS CICLOS FORMATIVOS DE GRADO SUPERIOR</h3>
+    
+    <form method="GET" id="myForm">
+        <table id="firstTable">
+            <caption id="firstCaption">Datos personales <span id="blueLink">(*)</span></caption>
+            <tr >
+                <td><label for="apellidos">Apellidos:</label></td>
+                <td><label for="nombre">Nombre:</label></td>
+                <td  class="tdLarge"><label for="dni">DNI:</label></td>
+            </tr>
+            <tr>
+                <td><input type="apellidos" name="apellidos" id="apellidos" class="apellidosWidth"></td>
+                <td><input type="nombre" name="nombre" id="nombre" class="nombreWidth"></td>
+                <td><input type="dni" name="dni" id="dni" class="smallerWidth"></td>
+            </tr>
+            <tr>
+                <td><label for="lugarNacimiento">Nacido/a en:</label></td>
+                <td><label for="provinciaPersona">Provincia:</label></td>
+                <td><label for="fechaNacimiento">Fecha nacimiento (dd/mm/aaaa):</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="lugarNacimiento" id="lugarNacimiento"></td>
+                <td>
+                    <select name="provinciaPersona" id="provincia" class="provinceTextSize">
+                        <option value="staCruz">S/C de Tenerife</option>
+                        <option value="lasPalmas">Las Palmas de Gran Canaria</option>
+                        <option value="madrid">Madrid</option>
+                    </select>
+                </td>
+                <td><input type="text" name="fechaNacimiento" id="fechaNacimiento" class="smallerWidth"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><label for="domicilio">Domicilio (Calle, plaza y número):</label></td>
+                <td><label for="codPostal">Código Postal:</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="text" name="domicilio" class="domicilioWidth"></td>
+                <td><input type="text" name="codPostal" id="codPostal" class="codPostalWidth"></td>
+            </tr>
+            <tr>
+                <td><label for="localidad">Localidad:</label></td>
+                <td><label for="provinciaDomicilio">Provincia:</label></td>
+                <td><label for="telefono" >Teléfono:</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" name="localidad" id="localidad" ></td>
+                <td>
+                    <select name="provinciaDomicilio" id="provincia" class="provinceTextSize">
+                        <option value="staCruz">S/C de Tenerife</option>
+                        <option value="lasPalmas">Las Palmas de Gran Canaria</option>
+                        <option value="madrid">Madrid</option>
+                    </select>
+                </td>
+                <td><input type="tel" name="telofono" id="telefono" class="telWidth"></td>
+            </tr>
+        </table>
+        
+        <table id="secondTable">
+            <caption>Requisitos de acceso</caption>
+            <tr>
+                <td>
+                    <input type="radio" name="req" id="metodo">
+                    <label for="Directo">Directo</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="indentRadio">
+                    <input type="radio" name="reqTipo" id="metodoDirecto">
+                    <label for="bachLOGSE">Bachillerato LOGSE.</label>
+                    <label for="modalidad">Modalidad:</label>
+                    <input type="text" name="modalidad" id="modalidad">
+                </td>
+            </tr>
+            <tr>
+                <td class="indentRadio">
+                    <input type="radio" name="reqTipo" id="metodoDirecto">
+                    <label for="Directo">Bachillerato experimental</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="indentRadio">
+                    <input type="radio" name="reqTipo" id="metodoDirecto">
+                    <label for="Directo">COU.</label>
+                    <label for="opcionCOU">Opción:</label>
+                    <input type="text" name="opcionCOU" id="opcionCOU">
+                </td>
+            </tr>
+            <tr>
+                <td class="indentRadio">
+                    <input type="radio" name="reqTipo" id="metodoDirecto">
+                    <label for="FP2">FP2</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="indentRadio">
+                    <input type="radio" name="reqTipo" id="metodoDirecto">
+                    <label for="otros">Otros (especifique):</label>
+                    <input type="text" name="otrosEspecificacion" id="otrosEspecificacion">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="radio" name="req" id="metodo">
+                    <label for="mediantePrueba">Mediante prueba</label>
+                </td>
+            </tr>
+        </table>
+        
+        <table id="thirdTable">
+            <caption id="thirdCaption">Solicitud</caption>
+            <tr>
+                <td>
+                    <p>El/la que suscribe desea ser adimitido en este centro para cursar el ciclo formativo de grado superior:</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="ciclo">Ciclo formativo: </label>
+                    <select name="ciclo" id="ciclo" class="cicloFormativoSelectWidth">
+                        <option disabled selected value="disabled"></option>
+                        <option value="primera">Primera</option>
+                        <option value="segunda">Segunda</option>
+                        <option value="tercera">Tercera</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p>En caso de no ser admitido/a, solicita la admisión por orden de preferencia en los siguientes:</p>
+                </td>
+            </tr>
+            <tr class="help">
+                <td class="help">
+                    <table id="noBorderTable" class="help">
+                        <tr>
+                            <td><strong>Ciclos formativos</strong></td>
+                            <td><strong>Centros</strong></td>
+                            <td><strong>Localidad</strong></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="primerCiclo" id="primerCiclo" class="cicloWidth"></td>
+                            <td><input type="text" name="primerCentro" id="segundoCentro"></td>
+                            <td class="length"><input type="text" name="primerLocalidad" id="primerLocalidad" class="localidadWidth"></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="segundoCiclo" id="segundoCiclo" class="cicloWidth"></td>
+                            <td><input type="text" name="segundoCentro" id="segundoCentro"></td>
+                            <td><input type="text" name="segundoLocalidad" id="segundoLocalidad" class="localidadWidth"></td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="horarioEsp">Modalidad de horario especial (marque):</label><input type="checkbox" name="horarioEsp" id="horarioEsp"></td>
+            </tr>
+        </table>
+        <table id="fourthTable">
+            <caption id="fourthCaption">Documentación presentada</caption>
+            <tr>
+                <td><input type="checkbox" name="fotocopiaDNI" id="fotocopiaDNI"><label for="fotocopiaDNI">Fotocopia DNI</label></td>
+                <td class="tdLarge"><input type="checkbox" name="certificado" id="certificado"><label for="certificado">Certificado académico</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox" name="otrosDocs" id="otrosDocs"><label for="otrosDocs">Otros documentos (especifique):<input type="text" name="otrosDocsEsp" id="otrosDocsEsp" class="docWidth"></label></td>
+            </tr>
+        </table>
+        <table id="fifthTable">
+            <caption id="fifthCaption">Comunicación</caption>
+            <tr>
+                <td><p>De acuerdo con el artículo 42.2 de la Ley 30/1992, de 26 de noviembre,
+                    de Régimen Jurídico de las Administraciones Públicas y del Procedimiento
+                    Administrativo Común, según la nueva redacción de la Ley 4/1999, de 13 de
+                    enero, se informa que:
+                </p></td>
+            </tr>
+            <tr>
+                <td class="spaceBetweenCom">
+                <ul>
+                    <li>El plazo máximo para resolver la presente solicitud es de 3 meses
+                        desde la fecha en que haya tenido entrada en el registro del órgano
+                        competente para la tramitación, sin perjuicio de lo previsto en el
+                        artículo 42.5 de la misma ley.
+                    </li>
+                    <li>El efecto que pruducira el silencion administrativo si transcurre el plazo sin que se haya dictado y notificado la resolucion
+                        corresponiendte, es desestimatorio de la solicitud.
+                    </li>
+                </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" name="diaSemana" id="" class="weekdayWidth">,
+                    <input type="text" name="dia" id="" class="dayWidth"> de 
+                    <input type="text" name="mes" id="" class="monthWidth"> de
+                    <select name="" id="">
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p id="firma">La persona solicitante,</p>
+                    <p id="firma2">Firma</p>
+                </td>
+                <td>
+                    <div><p id="registroParagraph">Registro de entrada</p></div>
+                </td>
+            </tr>
+        </table>
+        <table id="lastbox">
+            <tr>
+                <td>
+                    <p>(*) Los datos personales contenidos en este impreso
+                        podrán ser incluidos en un fichero para su tratamiento por la Consejeria de
+                        Educación, en el uso de las funciones propias que tiene atribuidas
+                        en el ámbito de sus competencias, pudiendo dirigirse a cualquier órgano de la
+                        misma para ejercitarlos derechos de acceso, rectificación, cancelación y
+                        oposición, según lo dispuesto en la Ley Orgánica 15/1999, de 13 de diciembre,
+                        de Protección de Datos de Carácter Personal (BOE núm 298, de 14 de diciembre
+                        de 1999).</p>
+                </td>
+            </tr>
+        </table>
+        <h2>DIRECTOR/A O TITULAR DEL CENTRO</h2>
+    </form>
+</body>
+</html>

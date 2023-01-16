@@ -1,0 +1,21 @@
+.black, td, table {border-color: #66442e;}
+
+table {
+	margin: auto;
+	margin-top:5%;
+	border: 2px solid;
+}
+
+tr, td {
+	height: 3em;
+	width: 3em;
+	border: 1px solid;
+}
+
+.white {background-color: #f7ecca;}
+
+.black {background-color: #66442e;}
+
+.whitePawn td {background-image: url("./images/peon-blanco.png");}
+
+.blackPawn td {background-image: url("./images/peon-negro.png");}

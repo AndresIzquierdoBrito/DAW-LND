@@ -1,0 +1,21 @@
+table {
+	margin: auto;
+	margin-top: 3%;
+	border: 1em solid #000084;
+}
+
+td{
+	width: 1.3em;
+	height: 1.3em;
+	border: 1px solid #000084;
+}
+
+.yellow {background-color: yellow; }
+
+.green {background-color: #008200; }
+
+.red {background-color: red;}
+
+.blue {background-color: blue;}
+
+.noborder {border: hidden;}

@@ -1,0 +1,112 @@
+html { background-color: #e2ddd8; }
+
+.cabecera {
+	background-color: #669966;
+	color: white;
+	text-align: right;
+	text-transform: uppercase;
+	margin-bottom: 0;
+	font-family:'Arial', sans-serif ;
+	padding-right: .5em;
+}
+
+h1 {
+	margin-top: 0;
+	background-color: #d4b8b8;
+	text-align: center;
+	letter-spacing: .2em;
+	font-family: 'Arial', sans-serif;
+	text-decoration: underline;
+	font-variant: small-caps;
+}
+
+.intro {
+	margin: auto;
+	width: 70%;
+	border-style: hidden dotted;
+	border-color: #669966;
+
+}
+
+.intro p {
+	font-family: 'Brush Script MT', cursive;
+	text-align: justify;
+	padding: .6em;
+	text-indent: 2em;
+}
+
+.par {
+	width: 68%;
+	margin-left: 30%;
+	border: 3px solid #660000;
+	background-color: #d4b8b8;
+	margin-bottom: 1em;
+}
+
+.par h2 {
+	font-size: 20px;
+	font-family: 'Arial', sans-serif;
+	color: white;
+	background-color: #660000;
+	margin: 0;
+	padding-left: 15px;
+}
+
+.par p {
+	margin-top: .2em;
+	font-size: 11pt;
+	font-family: 'Helvetica', sans-serif;
+	margin-left: 1em;
+	text-indent: 1em;
+	margin-bottom: .3em;
+	padding-right: .6em;
+}
+
+.organismo {
+	padding: 0 4px;
+	background-color: black;
+	color: white;
+}
+
+.proyecto {
+	font-weight: 600;
+	font-style: italic;
+	font-family: 'Brush Script MT', cursive;
+	border-bottom: 2px dashed white;
+}
+
+.impar {
+	background-color: #c8dac8;
+	width: 68%;
+	margin-left: 1em;
+	border: 3px solid #669966;	
+	margin-bottom: 1em;
+
+}
+
+.impar h2 {
+	font-size: 20px;
+	background-color: #669966;
+	margin:  0;
+	font-family: 'Arial', sans-serif;
+	color: white;
+	padding-left: 15px;
+
+}
+
+.impar p {
+	margin-top: .5em;
+	text-align: justify;
+	font-size: 11pt;
+	font-family: 'Helvetica', sans-serif;
+	margin-left: 1em;
+	text-indent: 1em;
+	margin-bottom: .3em;
+	padding-right: .6em;
+}	
+
+address {
+	background-color: #d4b8b8;
+	border-top: 5px double #711212;
+	padding-left: .5em;
+}

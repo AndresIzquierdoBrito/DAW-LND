@@ -1,0 +1,22 @@
+.fecha{
+    position: relative;
+}
+
+.dia{
+    font-size: 65;
+    transform: translate(20px, 55px);
+    color: red;
+}
+
+.mes{
+    font-size: 60;
+    transform: translateY(-75px);
+    text-shadow: 5px 5px 12px red, 15px 15px 12px green, 20px 20px 12px blue;
+
+}
+
+.anio{
+    position: absolute;
+    font-size: 50;
+    transform: rotate(-90deg) translate(22vh, 22vh);
+}

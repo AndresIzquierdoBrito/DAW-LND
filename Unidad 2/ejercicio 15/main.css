@@ -1,0 +1,54 @@
+#main {
+    margin: auto;
+    position: relative;
+    width: 150vh;
+    height: 90vh;
+    background: url("./pandababy.jpg") no-repeat;
+    background-size: 100%;
+}
+
+
+h1 {text-align: center;
+vertical-align: middle;}
+
+#arriba{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(15vh);
+    background: rgba(206, 171, 138, .6);
+    height: 6em;
+    width: 120vh;
+}
+
+#abajo{
+    position: absolute;
+    bottom: 0;
+    transform: translateX(15vh);
+    background: rgba(216, 218, 216);
+    width: 80%;
+    height: 6em;
+    opacity: 0;
+
+
+}
+
+#both:hover > #abajo {
+    opacity: 0.7;
+    bottom: 0em;
+    transition: opacity 1.5s linear;
+
+}
+
+#both:hover > #arriba{
+    bottom: 6em;
+    transition: bottom 3s;
+
+}
+
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    
+}

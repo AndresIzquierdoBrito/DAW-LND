@@ -1,0 +1,155 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3 {
+    text-align: center;
+    background-color: lightgray;
+    font-weight: bold;
+}
+input {
+    border: 1px inset;
+}
+table {
+    width: 97%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 1em 1em 1em;
+}
+
+.tdLarge {
+    width: 87%;
+}
+
+.indentRadio{
+    padding-left: 2em;
+}
+
+caption {
+    width: fit-content;
+    background-color: white;
+    position: relative;
+    top: .7em;
+    left: 1em;
+}
+
+#firstTable {
+    background-color: #eeeeee;
+}
+
+#firstCaption {
+    border: 3px solid #eeeeee;
+}
+
+#blueLink {
+    color: blue;
+    text-decoration: underline;
+}
+
+#secondTable {
+    background-color: #ffffe0;
+}
+
+#secondCaption {
+    border: 3px solid #ffffe0;
+}
+
+#thirdTable {
+    background-color: #add8e6;
+}
+
+#thirdCaption {
+    border: 3px solid #add8e6;
+}
+.help {
+    padding: 0;
+    margin-left: -1em;
+    padding-left: .6em;
+}
+.cicloWidth{ width: 20em;}
+.localidadWidth{ width: 10em;}
+
+#noBorderTable  {
+    border: none;
+}
+.length{
+    width: 80%;
+}
+
+#fourthTable {
+    background-color: #ffb6c1;
+}
+
+#fourthCaption {
+    border: 3px solid #ffb6c1;
+}
+
+.docWidth{width: 20em;}
+
+#fifthTable {
+    background-color: #ffe4c4;
+}
+
+#fifthCaption {
+    border: 3px solid #ffe4c4;
+    padding: 0 .5em 0;
+}
+
+ul {
+    padding-top: .7em;
+    padding-left: 2.8em;
+}
+.weekdayWidth{width: 10em;}
+
+.dayWidth{width: 3em;}
+
+.monthWidth{width: 10em;}
+
+#firma{ 
+    position: relative;
+    top: -2em;
+}
+#firma2{ 
+    position: relative;
+    top: 2.7em;
+}
+
+div {
+    width: 8em;
+    height: 8em;
+    border: 1px solid black;
+    background-color: white;
+    float: right;
+    position: relative;
+    right: -.5em;
+    bottom: -.5em;
+}
+#registroParagraph{
+    position: relative;
+    top: -1em;
+    left: 1.2em;
+    font-size: 11px
+}
+
+#lastbox {
+    padding: 0;
+    text-align: justify;
+    margin-top: 1em;
+    border: 2px dashed black;
+}
+
+
+.nombreWidth {width: 11.5em;}
+.provinceTextSize {width: 9em;}
+.apellidosWidth {width: 18em;}
+.domicilioWidth {width: 27em;}
+.smallerWidth {width: 8em;}
+.codPostalWidth {width: 6em;}
+.telWidth {width: 7em;}
+.cicloFormativoSelectWidth {width: 20em;}
+
+h2 {
+    letter-spacing: .2em;
+    text-align: center;
+}
+

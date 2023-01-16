@@ -1,0 +1,44 @@
+#main{
+    margin: auto;
+    width: 300px;
+    height: 300px;
+}
+
+img{width: 300px;}
+#scaleVinyl{transform: scale(.95)}
+
+.box{
+    width: 300px;
+    z-index: 1;
+    position: relative;
+    
+}
+.vinyl{
+    width: 300px;
+    position: relative;
+    bottom: 305px;
+    transition: 3s;
+}
+.box:hover + .vinyl{
+    transform: translateX(10em) rotate(180deg);
+    transition: all 3s;
+    transition-timing-function: ease-in-out;
+}
+#main:hover p{
+    opacity: 1;
+    transition: opacity 3s;
+}
+p{
+    width: fit-content;
+    padding: 5px;
+    color: white;
+    background-color: rgba(0, 0, 0, .6);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 20pt;
+    transform: translateY(5em);
+    position: relative;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 3s;
+}

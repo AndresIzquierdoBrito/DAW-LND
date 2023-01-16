@@ -1,0 +1,33 @@
+* {font-family: Arial, Helvetica, sans-serif;}
+
+a{ 
+    color: #0166cb;
+    text-decoration: none;
+}
+
+li{
+    width: 10em;
+    height: 1.4em;
+    text-align: center;
+    list-style-type: none;
+    padding-top: .6em;
+}
+ul li, ul li ul li{ border: 1px solid black;}
+
+ul li{background-color: #ffa500;}
+
+ul li ul li{
+    background-color: #ffff00;
+    display: none;
+}
+
+ul li:hover ul li{
+    display: block;
+    position: relative;
+    left: 7.5em;
+    bottom: 1.2em;
+}
+
+ul li:hover {background-color: black;}
+
+ul li:hover > a {color: white;}
