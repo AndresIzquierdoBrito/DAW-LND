@@ -1,5 +1,7 @@
 #main{
-    margin: auto;
+    position: absolute; 
+    left: 20em;
+    top: -3em;
     width: 300px;
     height: 300px;
 }
@@ -24,9 +26,13 @@ img{width: 300px;}
     transition: all 3s;
     transition-timing-function: ease-in-out;
 }
+p:hover + .box + .vinyl{
+    transform: translateX(10em) rotate(180deg);
+    transition: all 3s;
+    transition-timing-function: ease-in-out;
+}
 #main:hover p{
     opacity: 1;
-    transition: opacity 3s;
 }
 p{
     width: fit-content;
