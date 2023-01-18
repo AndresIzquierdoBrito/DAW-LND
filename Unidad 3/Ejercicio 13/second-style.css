@@ -12,6 +12,6 @@ tr, td {
     height: 20px;
     border-spacing: 0;    
 }
-tr > td:nth-child(odd){
+tr:nth-child(even){
     background-color: black;
 }
