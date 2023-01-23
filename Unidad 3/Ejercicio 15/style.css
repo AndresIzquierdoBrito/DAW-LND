@@ -1,0 +1,21 @@
+table{margin: 1em;}
+table{width: 96%;}
+input,select{
+    margin: 5px;
+}
+form{
+    margin: 0;
+}
+tr, td{
+    margin: 0;
+    padding: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+div{
+    display: none;
+}
+
+#test:checked + div{
+    display: block;
+}

@@ -1,0 +1,52 @@
+body{
+    width: max-content;
+    background-image: url(seabackground.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+#fishfish{
+    margin: 8em;
+    position: relative;
+    width: 80px;
+    transform: rotateY(180deg);
+    animation-name: fishie;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fishie{
+    
+    0%{
+        left: 0;
+    }
+    45%{
+        transform: rotateY(180deg);
+    }
+    50%{
+        left: 30em;
+        transform: rotateY(0deg);
+    }
+    95%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        left: 0;
+        transform: rotateY(180deg);
+    }
+    
+}
+
+.starfish{
+    position: relative;
+    width: 50px;
+}
+#oneStarfish{
+    bottom: 20em;
+    right: 15em;
+}
+#twoStarfish{
+    bottom: 20em;
+    right: -20em;
+}

@@ -1,0 +1,26 @@
+#nino{
+    height: 400px;
+    z-index: 1;
+}
+#yoyo{
+    height: 100px;
+    width: 27px;
+    float: left;
+    z-index: 2;
+    position: relative;
+    transform: translateY(0px);
+    transition: transform 2s;
+
+}
+#container{
+    overflow: hidden;
+    position: relative;
+    bottom: 250px;
+    left: 107px;
+}
+
+#nino:hover + #container > #yoyo{
+    transform: translateY(-60px);
+    height: 100px;
+    width: 27px;
+}
