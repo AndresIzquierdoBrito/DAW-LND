@@ -18,6 +18,14 @@ body{
     top: 390px;
     width: 300px;
 }
+#plane{
+    transform: rotateZ(15deg);
+    width: 100px;
+}
+#trail{
+    width: 650px;
+    height: 200px;
+}
 #rueda1, #rueda2{
     border-radius: 70px;
     width: 55px;
