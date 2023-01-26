@@ -50,3 +50,47 @@ body{
     bottom: 20em;
     right: -20em;
 }
+
+#boat{
+    position: relative;
+    bottom: 19em;
+    width: 150px;
+}
+
+.bubbles{
+    position: relative;
+    width: 60px;
+    animation-name: bubbles;
+    animation-fill-mode: backwards;
+    animation-iteration-count: infinite;
+}
+
+#oneBubbles{
+    right: 30em;
+    animation-duration: 20s;
+}
+#twoBubbles{
+    right: 12em;
+    animation-duration: 12s;
+}
+#threeBubbles{
+    animation-duration: 30s;
+}
+
+@keyframes bubbles{
+    0%{
+        bottom: 0;
+    }
+    25%{
+        bottom: 110px;
+    }
+    50%{
+        bottom: 220px;
+    }
+    75%{
+        bottom: 330px;
+    }
+    100%{
+        bottom: 440px;
+    }
+}
