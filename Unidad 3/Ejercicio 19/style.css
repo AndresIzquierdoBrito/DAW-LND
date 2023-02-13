@@ -22,9 +22,9 @@ body{
     transform: rotateZ(15deg);
     width: 100px;
 }
-#trail{
-    width: 650px;
-    height: 200px;
+#cloud{
+    position: relative;
+    bottom: 7em;
 }
 #rueda1, #rueda2{
     border-radius: 70px;
@@ -57,12 +57,20 @@ body{
     width: 600px;
     
 }
+#plane{
+    position: relative;
+    left: 6em;
+    animation-name: plane;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    
+}
 @keyframes arbolSlide{
     from{
-        left: -200px;
+        left: 700px;
     }
     to{
-        left: 700px;
+        left: -200px;
     }
 }
 @keyframes tires{
@@ -71,5 +79,13 @@ body{
     }
     to{
         transform: rotateZ(-1turn);
+    }
+}
+@keyframes plane{
+    from{
+        left: 900px;
+    }
+    to{
+        left: -800px;
     }
 }

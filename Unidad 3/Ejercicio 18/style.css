@@ -6,8 +6,7 @@ body{
     
 }
 
-#fishfish{
-    margin: 8em;
+#fishfish, #fishfish1, #fishfish2{
     position: relative;
     width: 80px;
     transform: rotateY(180deg);
@@ -15,7 +14,17 @@ body{
     animation-duration: 6s;
     animation-iteration-count: infinite;
 }
-
+#fishfish{
+    margin: 3em;
+}
+#fishfish1{
+    margin: 12em;
+    animation-delay: 2s;
+}
+#fishfish2{
+    margin: 1em;
+    animation-delay: 1s;
+}
 @keyframes fishie{
     
     0%{
@@ -37,7 +46,6 @@ body{
     }
     
 }
-
 .starfish{
     position: relative;
     width: 50px;
@@ -49,12 +57,6 @@ body{
 #twoStarfish{
     bottom: 20em;
     right: -20em;
-}
-
-#boat{
-    position: relative;
-    bottom: 19em;
-    width: 150px;
 }
 
 .bubbles{
