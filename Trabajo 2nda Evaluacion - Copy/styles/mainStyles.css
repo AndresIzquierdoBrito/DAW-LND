@@ -11,3 +11,24 @@
     justify-content: center;
     align-items: center;
 }
+.navbar{
+    height: 12vh;
+    padding-left: 5vh;
+    background-color: aquamarine;
+    font-size: 1.4vw;
+    align-items: center;
+    display: flex;
+}
+
+#mainNavBar ul{
+    display: block;
+    list-style-type: none;
+    display: inline-block;
+    column-gap: 6em;
+    display: flex;
+    position: sticky;
+    top: 6vh;
+}
+.test{
+    min-height: 120vh;
+}

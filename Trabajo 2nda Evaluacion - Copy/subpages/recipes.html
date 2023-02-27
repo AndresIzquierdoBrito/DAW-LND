@@ -5,291 +5,350 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main</title>
-    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/style.css" href="../styles/fonts.css">
+    <script src="../js/onclickHidden.js"></script>
 </head>
 <body>
     <div class="header">
-        <h1>Web title</h1>
+        <img id="weblogo" src="../media/weblogo.png" alt="weblogo">
+        <h1>bakedgoods</h1>
         <nav id="mainNavBar">
             <ul>
-                <li><a href="#">First</a></li>
-                <li><a href="#">Second</a></li>
-                <li><a href="#">Third</a></li>
-                <li><a href="#">Fourth</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">How to</a></li>
+                <li><a href="#">Occasions</a></li>
+                <li><a href="#">Tips</a></li>
             </ul>
         </nav>
+        <form action="" class="search-bar">
+            <input type="search" name="search" pattern=".*\S.*" required>
+            <button class="search-btn" type="submit">
+              <span class="seach-btn">Search</span>
+            </button>
+          </form>
     </div>
     <div class="contents">
         <div class="aside">
-            <p>sdijsdijf</p>    
+            <form action=".php">
+                <div class="divider"></div>
+                <div class="clickable-text"><label name="types" class="filter">Types</label></div>
+                <div class="hidden-div">
+                    <select name="types" id="types">
+                        <option value="all" selected>All</option>
+                        <option value="cakes">Cakes</option>
+                        <option value="cookies">Cookies</option>
+                        <option value="pies">Pies</option>
+                        <option value="breads">Breads</option>
+                        <option value="pastries">Pastries</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="divider"></div>
+                <div class="clickable-text"><label class="filter">Temperature</label></div>
+                <div class="hidden-div">
+                    <input type="checkbox" name="hot" id="temp1" value="hot">
+                    <label class="checkboxTempOptions" for="hot">Hot</label>
+                    <input type="checkbox" name="cold" id="temp2" value="cold">
+                    <label class="checkboxTempOptions" for="cold">Cold</label>
+                    <input type="checkbox" name="mild" id="temp3" value="mild">
+                    <label class="checkboxTempOptions" for="mild">Mild</label>
+                </div>
+                
+                <div class="divider"></div>
+                <div class="clickable-text"><label name="types" class="filter">Flavors</label></div>
+                <div class="hidden-div">
+                    <select name="flavors" id="flavors">
+                        <option value="all" selected>All</option>
+                        <option value="sweet">Sweet</option>
+                        <option value="salty">Salty</option>
+                        <option value="sour">Sour</option>
+                        <option value="bitter">Bitter</option>
+                        <option value="spicy">Fruity</option>
+                        <option value="spicy">Veggie</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="divider"></div>
+                <div class="clickable-text"><label class="filter">Size</label></div>
+                <div class="hidden-div">
+                    <input type="radio" name="size" id="small" value="small">
+                    <label class="radioSizeOptions" for="small">Small</label>
+                    <input type="radio" name="size" id="medium" value="medium">
+                    <label class="radioSizeOptions" for="medium">Medium</label>
+                    <input type="radio" name="size" id="large" value="large">
+                    <label class="radioSizeOptions" for="large">Large</label>
+                </div>
+                <div class="divider"></div>
+                <label name="types" class="filter">Difficulty</label>
+            </form>
         </div>
-    
+        
         <div class="articles">
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
-                <article>
-                    <h1>Article title</h1>
-                    <h3>Subtitle</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-                        Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
-                        Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
-                        Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
-                        nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
-                        condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
-                        sollicitudin viverra ullamcorper. Nullam at nisl nunc.
-                    </p>
-                </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
+            <article>
+                <h1>Article title</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. Integer vestibulum enim quis sagittis viverra. 
+                    Fusce tempus augue ut neque tempor, ut ullamcorper urna feugiat. Quisque eget convallis orci. 
+                    Vestibulum posuere nibh dolor, in molestie tellus tempor vel. Integer eget lectus quam. In gravida orci a mi bibendum, 
+                    nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis. Maecenas non tortor imperdiet, faucibus enim sed, 
+                    condimentum ex. Maecenas mollis feugiat augue, eu eleifend ex scelerisque et. Phasellus et lacus magna. Mauris 
+                    sollicitudin viverra ullamcorper. Nullam at nisl nunc.
+                </p>
+            </article>
         </div>
     </div>
-
+    
     <footer>
         <p>Footer content</p>
     </footer>
-    </body>    
-    </html>
+</body>    
+</html>

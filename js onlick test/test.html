@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>My Webpage</title>
+    <style>
+        .hidden-div {
+            display: none;
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const clickableText = document.querySelector('.clickable-text');
+            const hiddenDiv = document.querySelector('.hidden-div');
+
+            clickableText.addEventListener('click', function() {
+                if (hiddenDiv.style.display === 'none') {
+                    hiddenDiv.style.display = 'block';
+                } else {
+                    hiddenDiv.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Your HTML code here -->
+    <div class="clickable-text">
+        <p>Click me!</p>
+    </div>
+    <div class="hidden-div">
+        <p>Hello!</p>
+        <p>hehe</p>
+    </div>
+</body>
+</html>
