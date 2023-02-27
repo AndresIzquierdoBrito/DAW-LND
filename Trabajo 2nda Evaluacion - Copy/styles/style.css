@@ -17,10 +17,9 @@ body{
     height: 12vh;
     padding-left: 5vh;
     background-color: #F2964B;
-    font-size: 1.8rem;
+    font-size: 2.3vw;
     align-items: center;
     display: flex;
-    
     top: 0;
     border: 1px solid red;
 }
@@ -40,6 +39,7 @@ ul a, .header h1{
     text-shadow:  2px 2px 4px #F8C8A0;
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 4vw;
 }
 #mainNavBar ul{
     list-style-type: none;
@@ -50,6 +50,18 @@ ul a, .header h1{
 #mainNavBar ul li:hover{
     background-color: #F8C8A0;
     border-radius: .3rem;
+}
+#recipe:after{
+    content: 'Recipes';
+}
+#lactose:after{
+    content: 'Lactose-free';
+}
+#gluten:after{
+    content: 'Gluten-free';
+}
+#nuts:after{
+    content: 'Nuts-free';
 }
 .search-bar{
     margin-left: auto; 
@@ -65,7 +77,6 @@ ul a, .header h1{
     padding: 0.75em;
     transform: scale(1);
     border-color: white;
-
 }
 .search-btn {
     background: #CD640E;
@@ -79,7 +90,44 @@ ul a, .header h1{
     top: .4rem;
     transform:  translate(-0.5em,-0.5em);;
     transform-origin: 0 50%;
-  }
+}
+@media screen and (max-width: 600px) {
+    .header h1{
+        display: none;
+    }
+    #recipe:after{
+        content: '';
+        display: block;
+        background-image: url('../media/navbar/recipes.png');
+        background-size: cover;
+        width: 8vw;
+        height: 8vh;
+    }
+    #lactose:after{
+        content: '';
+        display: block;
+        background-image: url('../media/navbar/lactosefree.png');
+        background-size: cover;
+        width: 8vw;
+        height: 8vh;
+    }
+    #gluten:after{
+        content: '';
+        display: block;
+        background-image: url('../media/navbar/glutenfree.png');
+        background-size: cover;
+        width: 8vw;
+        height: 8vh;
+    }
+    #nuts:after{
+        content: '';
+        display: block;
+        background-image: url('../media/navbar/nutsfree.png ');
+        background-size: cover;
+        width: 8vw;
+        height: 8vh;
+    }
+}
 .aside {
     height: 85vh;
     width: 15%;
