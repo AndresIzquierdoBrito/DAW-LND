@@ -21,15 +21,15 @@ document.addEventListener('DOMContentLoaded', function() {
         aside.classList.toggle('show');
         article.classList.toggle('article-active');
         
-        if (article.style.width === '70%') {
+        if (article.style.width === '67%') {
             article.style.width = originalWidth;
         } else {
-            article.style.width = '70%';
+            article.style.width = '67%';
         }
-        if (pages.style.width === '70%') {
+        if (pages.style.width === '67%') {
             pages.style.width = originalWidth;
         } else {
-            pages.style.width = '70%';
+            pages.style.width = '67%';
         }
     });});
     

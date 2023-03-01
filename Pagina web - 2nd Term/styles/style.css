@@ -4,7 +4,23 @@
     padding: 0;
     white-space: nowrap;
 }
-
+::-webkit-scrollbar
+{
+    width: 10px;
+    background-color: #F5F5F5;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #F90;	
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
 html{
     height: 100%;
 }
@@ -129,32 +145,7 @@ a, .header h1, .hidden-div > p, footer{
     border-radius: 6px;
     background-color: #fff;
 }
-label {
-    font-family: Lato;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1.5rem;
-    margin: 1vh;
-    text-align: center;
-    color: white;
-    text-shadow:  2px 2px 4px #442105;
-}
-select{
-    width: 75%;
-    height: 3vh;
-    margin: auto;
-    margin-top: 1rem;
-    margin-bottom: .5rem;
-    background-color: #FBDEC6;
-    border: none;
-    border-radius: .3rem;
-    font-family: Lato;
-    font-weight: bold;
-    font-style: normal;
-    font-size: 1.3rem;
-    display: block;
-    
-}
+
 .divider{
     width: 90%;
     height: .2rem;
@@ -219,6 +210,32 @@ select{
     max-height: 0;
     transition: visibility .35s, max-height .35s ease-in;
 }
+label {
+    font-family: Lato;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.5rem;
+    margin: 1vh;
+    text-align: center;
+    color: white;
+    text-shadow:  2px 2px 4px #442105;
+}
+select{
+    width: 75%;
+    height: 2.6rem;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: .5rem;
+    background-color: #FBDEC6;
+    border: none;
+    border-radius: .3rem;
+    font-family: Lato;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 1.3rem;
+    display: block;
+    
+}
 input[type="checkbox"]{
     margin-left: .5rem;
     margin-top: 1.5rem;
@@ -238,6 +255,7 @@ input[type="radio"]{
 }
 .timeParagraphs{
     text-shadow:  2px 2px 4px #442105;
+    font-size: large;
     
 }
 .textInputBoxes{
@@ -248,7 +266,6 @@ input[type="radio"]{
     border-radius: .3rem;
     font-family: Lato;
     font-weight: bold;
-    font-size: 1rem;
     padding-left: .5rem;
 }
 .articles{
@@ -326,14 +343,44 @@ p{
 footer {
     padding: 0 1rem 0;
     clear: both;
-    height:9vh;
+    height:12vh;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background:#EF7A1A;
+    z-index: 11;
+}
+@media screen and (max-height: 1050px){
+    .aside{
+        height: 74.5vh;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    ::-webkit-scrollbar
+    {
+        width: 10px;
+        background-color: #f5b17a;
+    }
+    
 }
 @media screen and (max-width: 950px) {
+    ::-webkit-scrollbar
+{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color: #F90;	
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent)
+}
     .header h1{
         display: none;
     }
@@ -408,6 +455,7 @@ footer {
     }
     article{
         max-width: 100%;
+        margin: .5VH;
     }
     label{
         font-size: 1rem;
@@ -446,6 +494,9 @@ footer {
     }
     .pages{
         width: 100%;
+    }
+    .pages ul li:nth-child(n + 5):nth-child(-n + 6){
+        display: none;
     }
     footer{
         display: none;
