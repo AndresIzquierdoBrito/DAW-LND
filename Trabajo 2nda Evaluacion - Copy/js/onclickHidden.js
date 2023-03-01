@@ -7,6 +7,30 @@ document.addEventListener('DOMContentLoaded', function() {
         
         clickableText.addEventListener('click', function() {
             hiddenDiv.classList.toggle('hidden');
+            
         });
     });
-});
+    
+    const hamburgerMenu = document.querySelector('.hamburger-menu');
+    const aside = document.querySelector('.aside');
+    const article = document.querySelector('.articles');
+    const originalWidth = article.offsetWidth + 'px';
+    const pages = document.querySelector('.pages');
+    
+    hamburgerMenu.addEventListener('click', () => {        
+        aside.classList.toggle('show');
+        article.classList.toggle('article-active');
+        
+        if (article.style.width === '70%') {
+            article.style.width = originalWidth;
+        } else {
+            article.style.width = '70%';
+        }
+        if (pages.style.width === '70%') {
+            pages.style.width = originalWidth;
+        } else {
+            pages.style.width = '70%';
+        }
+    });});
+    
+    

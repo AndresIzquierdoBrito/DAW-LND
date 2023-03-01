@@ -7,84 +7,139 @@
     <title>Main</title>
     <link rel="stylesheet" href="../styles/style.css" href="../styles/fonts.css">
     <script src="../js/onclickHidden.js"></script>
+    <link rel="icon" type="image/x-icon" href="../media/weblogo.ico">
 </head>
 <body>
     <div class="header">
-        <img id="weblogo" src="../media/weblogo.png" alt="weblogo">
-        <h1>bakedgoods</h1>
+        <a href="../main.html"><img id="weblogo" src="../media/weblogo.png" alt="weblogo"></a>
+        <a href="../main.html"><h1>bakedgoods</h1></a>
         <nav id="mainNavBar">
             <ul>
-                <li><a href="#" id="recipe"></a></li>
+                <li><a href="./recipes.html" id="recipe"></a></li>
                 <li><a href="#" id="lactose"></a></li>
                 <li><a href="#" id="gluten"></a></li>
                 <li><a href="#" id="nuts"></a></li>
             </ul>
         </nav>
-        <form action="" class="search-bar">
+        <form action="get" class="search-bar">
             <input type="search" name="search" pattern=".*\S.*" required>
             <button class="search-btn" type="submit">
-              <span class="seach-btn">Search</span>
+                <span class="search-btn">Search</span>
             </button>
-          </form>
+        </form>
+        <img class="searchbtnResponsive" src="../media/navbar/search.png" alt="search">
     </div>
     <div class="contents">
-        <div class="aside">
-            <form action=".php">
-                <div class="divider"></div>
-                <div class="clickable-text"><label name="types" class="filter">Types</label></div>
-                <div class="hidden-div">
-                    <select name="types" id="types">
-                        <option value="all" selected>All</option>
-                        <option value="cakes">Cakes</option>
-                        <option value="cookies">Cookies</option>
-                        <option value="pies">Pies</option>
-                        <option value="breads">Breads</option>
-                        <option value="pastries">Pastries</option>
-                        <option value="other">Other</option>
-                    </select>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <div>
+            <div class="aside">
+                <form action=".php">
+                    <div class="divider"></div>
+                    <div class="clickable-text"><label name="types" class="filter">Types</label></div>
+                    <div class="hidden-div">
+                        <select name="types" id="types">
+                            <option value="all" selected>All</option>
+                            <option value="cakes">Cakes</option>
+                            <option value="cookies">Cookies</option>
+                            <option value="pies">Pies</option>
+                            <option value="breads">Breads</option>
+                            <option value="pastries">Pastries</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="clickable-text"><label name="temp" class="filter">Temperature</label></div>
+                    <div class="hidden-div">
+                        <div>
+                            <input type="checkbox" name="temp" id="hot" value="hot">
+                            <label class="options" for="hot">Hot</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temp" id="cold" value="cold">
+                            <label class="options" for="cold">Cold</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="temp" id="mild" value="mild">
+                            <label class="options" for="mild">Mild</label>
+                        </div> 
+                    </div>
+                    <div class="divider" ></div>
+                    <div class="clickable-text"><label name="flavors" class="filter">Flavors</label></div>
+                    <div class="hidden-div">
+                        <select name="flavors" id="flavors">
+                            <option value="all" selected>All</option>
+                            <option value="sweet">Sweet</option>
+                            <option value="salty">Salty</option>
+                            <option value="sour">Sour</option>
+                            <option value="bitter">Bitter</option>
+                            <option value="spicy">Fruity</option>
+                            <option value="spicy">Veggie</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="clickable-text"><label name="size" class="filter">Size</label></div>
+                    <div class="hidden-div" id="filterFlexColumn">
+                        <div>
+                            <input type="radio" name="size" id="small" value="small">
+                            <label class="options" for="small">Small</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" id="medium" value="medium">
+                            <label class="options" for="medium">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="size" id="large" value="large">
+                            <label class="options" for="large">Large</label>
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="clickable-text"><label name="difficulty" class="filter">Difficulty</label></div>
+                    <div class="hidden-div" id="filterFlexColumn">
+                        <div>
+                            <input type="radio" name="difficulty" id="easydiff" value="easy">
+                            <label class="options" for="easydiff">Easy</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="difficulty" id="mediumdiff" value="medium">
+                            <label class="options" for="mediumdiff">Medium</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="difficulty" id="harddiff" value="hard">
+                            <label class="options" for="harddiff">Hard</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="difficulty" id="prodiff" value="pro">
+                            <label class="options" for="prodiff">Pro</label> 
+                        </div>
+                    </div>
+                    <div class="divider"></div>
+                    <div class="clickable-text" style="margin-bottom: 1rem;"" ><label name="time" class="filter">Time</label></div>
+                    <div class="hidden-div" id="timeResponsive">
+                        <p class="timeParagraphs">Between</p>
+                        <input class="textInputBoxes" type="text" name="time" id="firstTime"><p class="timeParagraphs">and</p>
+                        <input class="textInputBoxes" type="text" name="time" id="secondTime">
+                        <p class="timeParagraphs">minutes</p>
+                    </div>
                 </div>
-                <div class="divider"></div>
-                <div class="clickable-text"><label class="filter">Temperature</label></div>
-                <div class="hidden-div">
-                    <input type="checkbox" name="hot" id="temp1" value="hot">
-                    <label class="checkboxTempOptions" for="hot">Hot</label>
-                    <input type="checkbox" name="cold" id="temp2" value="cold">
-                    <label class="checkboxTempOptions" for="cold">Cold</label>
-                    <input type="checkbox" name="mild" id="temp3" value="mild">
-                    <label class="checkboxTempOptions" for="mild">Mild</label>
-                </div>
-                
-                <div class="divider"></div>
-                <div class="clickable-text"><label name="types" class="filter">Flavors</label></div>
-                <div class="hidden-div">
-                    <select name="flavors" id="flavors">
-                        <option value="all" selected>All</option>
-                        <option value="sweet">Sweet</option>
-                        <option value="salty">Salty</option>
-                        <option value="sour">Sour</option>
-                        <option value="bitter">Bitter</option>
-                        <option value="spicy">Fruity</option>
-                        <option value="spicy">Veggie</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <div class="divider"></div>
-                <div class="clickable-text"><label class="filter">Size</label></div>
-                <div class="hidden-div">
-                    <input type="radio" name="size" id="small" value="small">
-                    <label class="radioSizeOptions" for="small">Small</label>
-                    <input type="radio" name="size" id="medium" value="medium">
-                    <label class="radioSizeOptions" for="medium">Medium</label>
-                    <input type="radio" name="size" id="large" value="large">
-                    <label class="radioSizeOptions" for="large">Large</label>
-                </div>
-                <div class="divider"></div>
-                <label name="types" class="filter">Difficulty</label>
             </form>
         </div>
         
         <div class="articles">
             <article>
+                <img class="dessertImage" src="../media/desserts/cookies.jpg" alt="">
+                <h1>Chocolate Chip Cookies</h1>
+                <h3>Subtitle</h3>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+                    Ut augue eros, vehicula a risus et, accumsan rhoncus nunc. 
+                </p>
+            </article>
+            <article>
                 <h1>Article title</h1>
                 <h3>Subtitle</h3>
                 <p>
@@ -345,10 +400,34 @@
                 </p>
             </article>
         </div>
+        <div class="pages">
+            <ul>
+                <li><a href="#">&lt&lt</a></li>
+              <li><a href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">>></a></li>
+            </ul>
+          </div>
     </div>
-    
     <footer>
-        <p>Footer content</p>
+        <div style="max-width: 30%;">
+            <h3>About Us</h3>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus dignissim risus, placerat finibus sapien cursus at. 
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+        <ul>
+          <li>CIFP Cesar Manrique</li>
+          <li>Santa Cruz de Tenerife, 38004</li>
+          <li>Email: andres.izbri@gmail.com</li>
+        </ul>
+        </div>
+        <p class="text-center">&copy; 2023 Andres Izquierdo. All Rights Reserved.</p>
+
     </footer>
 </body>    
 </html>
