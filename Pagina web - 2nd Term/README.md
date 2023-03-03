@@ -1,1 +1,3 @@
-# Pagina web - 2nd Term
+# Pagina-web---2nd-Term
+
+This is my BakedGoods website :)
