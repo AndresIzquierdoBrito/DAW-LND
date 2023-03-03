@@ -1,0 +1,19 @@
+
+svg{
+    position: absolute;
+    top: 20rem;
+    left: 20rem;
+}
+
+svg.checked{
+    animation:like 0.5s 1;
+  fill:red;
+  stroke:none;
+    
+
+}
+@keyframes like {
+    0%   { transform: scale(1); }
+    90%   { transform: scale(1.05); }
+    100% { transform: scale(1.02); }
+  }
