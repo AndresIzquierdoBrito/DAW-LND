@@ -36,16 +36,16 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             article.style.width = '67%';
         }
+        if (pages.style.width === '67%') {
+            pages.style.width = originalWidth;
+        } else {
+            pages.style.width = '67%';
+        }
         minidata.forEach(mini => {
             if (article.style.width === '67%') {
                 mini.style.display = 'none';
             } else {
                 mini.style.display = 'block';
             }
-        if (pages.style.width === '67%') {
-            pages.style.width = originalWidth;
-        } else {
-            pages.style.width = '67%';
-        }
-    });
+        });
 });});
