@@ -12,13 +12,15 @@
 <body>
     <div class="header fixed">
         <a href="../index.html"><img id="weblogo" src="../media/weblogo.png" alt="weblogo"></a>
-        <a href="../index.html"><h1>BAKEDGOODS</h1></a>
-        <nav id="mainNavBar">
+        <a href="../index.html">
+            <h1>BAKEDGOODS</h1>
+        </a>
+        <nav class="mainNavBar gluten">
             <ul>
                 <li><a href="./recipeMenu.html" id="recipe"></a></li>
-                <li><a href="#" id="lactose"></a></li>
-                <li><a href="#" id="gluten"></a></li>
-                <li><a href="#" id="nuts"></a></li>
+                <li><a href="./recipeMenuLactose.html" id="lactose"></a></li>
+                <li><a href="./recipeMenuGluten.html" id="gluten"></a></li>
+                <li><a href="./recipeMenuNuts.html" id="nuts"></a></li>
             </ul>
         </nav>
         <form action="get" class="search-bar">
@@ -65,9 +67,9 @@
                         <div>
                             <input type="checkbox" name="temp" id="mild" value="mild">
                             <label class="options" for="mild">Mild</label>
-                        </div> 
+                        </div>
                     </div>
-                    <div class="divider" ></div>
+                    <div class="divider"></div>
                     <div class="clickable-text"><label name="flavors" class="filter">Flavors</label></div>
                     <div class="hidden-div">
                         <select name="flavors" id="flavors">
@@ -114,190 +116,281 @@
                         </div>
                         <div>
                             <input type="radio" name="difficulty" id="prodiff" value="pro">
-                            <label class="options" for="prodiff">Pro</label> 
+                            <label class="options" for="prodiff">Pro</label>
                         </div>
                     </div>
                     <div class="divider"></div>
-                    <div class="clickable-text" style="margin-bottom: 1rem;"" ><label name="time" class="filter">Time</label></div>
-                    <div class="hidden-div" id="timeResponsive">
+                    <div class="clickable-text" style="margin-bottom: 1rem;"" ><label name=" time" class="filter">
+                        Time</label></div>
+                    <div class="hidden-div timeBottomMargin" id="timeResponsive">
                         <p class="timeParagraphs">Between</p>
-                        <input class="textInputBoxes" type="text" name="time" id="firstTime"><p class="timeParagraphs">and</p>
+                        <input class="textInputBoxes" type="text" name="time" id="firstTime">
+                        <p class="timeParagraphs">and</p>
                         <input class="textInputBoxes" type="text" name="time" id="secondTime">
                         <p class="timeParagraphs">minutes</p>
                     </div>
-                </div>
+            </div>
             </form>
         </div>
         <div class="articles">
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/cookies.jpg" alt="">
-                    <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="60" height="60" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>450</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>6+</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>450</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>6+</p>
                         <img class="miniDataImages difficulty" src="../media/greenMeter.png" alt="">
                     </div>
                     <h1>Chocolate Chip Cookies</h1>
                     <h3>The Classic Treat that Never Gets Old</h3>
-                    <p>Enjoy the perfect blend of buttery dough and sweet chocolate in a warm chocolate chip cookie. It's a timeless treat that brings comfort and joy, whether as a midday snack or late-night indulgence. Share a batch with loved ones for sweet bliss.</p>
+                    <p>Enjoy the perfect blend of buttery dough and sweet chocolate in a warm chocolate chip cookie.
+                        It's a timeless treat that brings comfort and joy, whether as a midday snack or late-night
+                        indulgence. Share a batch with loved ones for sweet bliss.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/brownies.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>950</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>4+</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>950</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>4+</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Chocolate Brownies</h1>
                     <h3>The Classic Treat that Never Gets Old</h3>
-                    <p>Sink your teeth into a fudgy, chocolatey brownie, warm and gooey straight from the oven. A classic dessert that never fails to satisfy your sweet tooth.</p>
+                    <p>Sink your teeth into a fudgy, chocolatey brownie, warm and gooey straight from the oven. A
+                        classic dessert that never fails to satisfy your sweet tooth.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/applepie.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>530</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>3</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>530</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>3</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Apple Pie</h1>
                     <h3>A Classic American Dessert</h3>
-                    <p>Enjoy a slice of warm apple pie, with tender apples and cinnamon spices baked to perfection. A timeless dessert that's perfect for any occasion, especially Thanksgiving.</p>
+                    <p>Enjoy a slice of warm apple pie, with tender apples and cinnamon spices baked to perfection. A
+                        timeless dessert that's perfect for any occasion, especially Thanksgiving.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/redvelvet.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>810</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>4</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>810</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>4</p>
                         <img class="miniDataImages difficulty" src="../media/redMeter.png" alt="">
                     </div>
                     <h1>Red Velvet Cake</h1>
                     <h3>A Decadent Dessert for Special Occasions</h3>
-                    <p>Treat yourself to the rich, velvety goodness of red velvet cake, layered with smooth cream cheese frosting. Perfect for birthdays, weddings, or any celebration.</p>
+                    <p>Treat yourself to the rich, velvety goodness of red velvet cake, layered with smooth cream cheese
+                        frosting. Perfect for birthdays, weddings, or any celebration.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/quesillo.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>650</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>5</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>650</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>5</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Quesillo</h1>
                     <h3>A Creamy Venezuelan Delight</h3>
-                    <p>Indulge in the smooth, velvety texture of Quesillo, a traditional Venezuelan dessert made with condensed milk, eggs, and caramel sauce. A delectable treat that's perfect for any occasion, whether enjoyed alone or shared with loved ones.</p>
+                    <p>Indulge in the smooth, velvety texture of Quesillo, a traditional Venezuelan dessert made with
+                        condensed milk, eggs, and caramel sauce. A delectable treat that's perfect for any occasion,
+                        whether enjoyed alone or shared with loved ones.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/blueberry.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>700</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>4+</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>700</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>4+</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Blueberry Cheesecake</h1>
                     <h3>A Sweet and Creamy Dessert</h3>
-                    <p>Indulge in the velvety richness of blueberry cheesecake, with a graham cracker crust and a sweet blueberry topping. A perfect dessert for any summer gathering.</p>
+                    <p>Indulge in the velvety richness of blueberry cheesecake, with a graham cracker crust and a sweet
+                        blueberry topping. A perfect dessert for any summer gathering.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/carrotcake.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>350</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>2</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>350</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>2</p>
                         <img class="miniDataImages difficulty" src="../media/redMeter.png" alt="">
                     </div>
                     <h1>Carrot Cake</h1>
                     <h3>A Sweet Way to Eat Your Veggies</h3>
-                    <p>Indulge in the sweet taste of carrot cake. With its moist texture and hints of cinnamon and nutmeg, it’s a dessert that never fails to satisfy. Top with cream cheese frosting for an extra touch of indulgence.</p>
+                    <p>Indulge in the sweet taste of carrot cake. With its moist texture and hints of cinnamon and
+                        nutmeg, it’s a dessert that never fails to satisfy. Top with cream cheese frosting for an extra
+                        touch of indulgence.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/cremebrulee.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>250</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>1</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>250</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>1</p>
                         <img class="miniDataImages difficulty" src="../media/redMeter.png" alt="">
                     </div>
                     <h1>Creme Brulee</h1>
                     <h3>A Luxurious French Dessert</h3>
-                    <p>Experience the silky smooth texture and delicate flavors of creme brulee, with its creamy custard base and caramelized sugar top. A sophisticated dessert that's perfect for date night.</p>
+                    <p>Experience the silky smooth texture and delicate flavors of creme brulee, with its creamy custard
+                        base and caramelized sugar top. A sophisticated dessert that's perfect for date night.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/lemon bars.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>1050</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>8+</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>1050</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>8+</p>
                         <img class="miniDataImages difficulty" src="../media/greenMeter.png" alt="">
                     </div>
                     <h1>Lemon bars</h1>
                     <h3>A Tangy Twist on Sweetness</h3>
-                    <p>Refresh your palate with zesty lemon bars, a perfect balance of sweet and sour. The buttery shortbread crust and tangy lemon filling make for a delicious treat.</p>
+                    <p>Refresh your palate with zesty lemon bars, a perfect balance of sweet and sour. The buttery
+                        shortbread crust and tangy lemon filling make for a delicious treat.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/fruittart.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>790</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>5</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>790</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>5</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Fruit tart</h1>
                     <h3>A Colorful and Delicious Treat</h3>
-                    <p>Enjoy the fresh taste of a fruit tart. With its buttery crust and sweet cream filling, it’s a dessert that’s sure to please. Top with an array of colorful fruit for a beautiful and delicious treat.</p>
+                    <p>Enjoy the fresh taste of a fruit tart. With its buttery crust and sweet cream filling, it’s a
+                        dessert that’s sure to please. Top with an array of colorful fruit for a beautiful and delicious
+                        treat.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/pecanpie.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>670</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>4</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>670</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>4</p>
                         <img class="miniDataImages difficulty" src="../media/yellowMeter.png" alt="">
                     </div>
                     <h1>Pecan pie</h1>
                     <h3>A Southern Classic</h3>
-                    <p>Indulge in the rich taste of pecan pie. With its flaky crust and sweet filling, it’s a dessert that never fails to satisfy. Serve warm with a scoop of vanilla ice cream for an extra touch of indulgence.</p>
+                    <p>Indulge in the rich taste of pecan pie. With its flaky crust and sweet filling, it’s a dessert
+                        that never fails to satisfy. Serve warm with a scoop of vanilla ice cream for an extra touch of
+                        indulgence.</p>
                 </article>
             </a>
             <a href="">
                 <article>
                     <img class="dessertImage" src="../media/desserts/truffles.jpg" alt="">
-                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd"><path d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181"/></svg>
+                    <svg width="200" height="200" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                        fill-rule="evenodd" clip-rule="evenodd">
+                        <path
+                            d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+                    </svg>
                     <div class="miniData">
-                        <img class="miniDataImages" src="../media/calories.png" alt=""><p>950</p>
-                        <img class="miniDataImages" src="../media/people.png" alt=""><p>10</p>
+                        <img class="miniDataImages" src="../media/calories.png" alt="">
+                        <p>950</p>
+                        <img class="miniDataImages" src="../media/people.png" alt="">
+                        <p>10</p>
                         <img class="miniDataImages difficulty" src="../media/greenMeter.png" alt="">
                     </div>
                     <h1>Chocolate Truffles</h1>
                     <h3>A Bite-Sized Indulgence</h3>
-                    <p>Savor the rich taste of chocolate truffles. With their smooth texture and intense chocolate flavor, they’re a dessert that’s sure to satisfy your sweet tooth. Roll in cocoa powder or chopped nuts for an extra touch of indulgence.</p>
+                    <p>Savor the rich taste of chocolate truffles. With their smooth texture and intense chocolate
+                        flavor, they’re a dessert that’s sure to satisfy your sweet tooth. Roll in cocoa powder or
+                        chopped nuts for an extra touch of indulgence.</p>
                 </article>
             </a>
-            
         </div>
         <div class="pages">
             <ul>
@@ -311,25 +404,23 @@
             </ul>
         </div>
     </div>
-    <footer>
+    <footer class="recipeFooter">
         <div style="max-width: 30%;">
             <h3>About Us</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                Integer eget lectus quam. In gravida orci a mi bibendum, 
-                nec feugiat odio ultrices. Nulla finibus erat in ultricies facilisis.
-                Sed tempus dignissim risus, placerat finibus sapien cursus at. 
-            </div>
-            <div>
-                <h3>Contact Us</h3>
-                <ul>
-                    <li>CIFP Cesar Manrique</li>
-                    <li>Santa Cruz de Tenerife, 38004</li>
-                    <li>Email: andres.izbri@gmail.com</li>
-                </ul>
-            </div>
-            <p class="text-center">&copy; 2023 Andres Izquierdo. All Rights Reserved.</p>
-            
-        </footer>
-    </body>    
-    </html>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Integer eget lectus quam. In gravida orci a mi bibendum,
+                nec feugiat odio ultrices.
+        </div>
+        <div>
+            <h3>Contact Us</h3>
+            <ul>
+                <li>CIFP Cesar Manrique</li>
+                <li>Santa Cruz de Tenerife, 38004</li>
+                <li>Email: andres.izbri@gmail.com</li>
+            </ul>
+        </div>
+        <p class="text-center">&copy; 2023 Andres Izquierdo. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

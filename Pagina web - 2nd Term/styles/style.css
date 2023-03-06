@@ -22,10 +22,6 @@
     transparent)
 }
 
-html {
-    height: 100%;
-}
-
 body {
     background: #F5B17A;
 }
@@ -34,7 +30,6 @@ body {
     position: fixed;
 }
 
-
 .header {
     height: 12vh;
     display: flex;
@@ -42,6 +37,7 @@ body {
     align-items: center;
     justify-content: space-around;
     width: 100%;
+    height: 12vh;
     font-size: 2.1vw;
     background-color: #F2964B;
     padding-left: 10px;
@@ -62,7 +58,7 @@ a:visited{
     color: black;
 }
 
-#mainNavBar a,
+.mainNavBar a,
 .header h1,
 .hidden-div>p,
 .pages a,
@@ -80,15 +76,36 @@ footer {
     font-size: 2.6vw;
 }
 
-#mainNavBar ul {
+.mainNavBar ul {
     list-style-type: none;
     display: inline-block;
     column-gap: 6vh;
     display: flex;
 }
 
-#mainNavBar ul li:hover a {
+.mainNavBar ul li:hover a {
     color: #FCE9D9;
+}
+
+.lactose ul li:nth-child(2) a {
+    background-color: white;
+    padding: 1vh;
+    color: #f2964b;
+    border-radius: 1vh;
+}
+
+.gluten ul li:nth-child(3) a {
+    background-color: white;
+    padding: 1vh;
+    color: #f2964b;
+    border-radius: 1vh;
+}
+
+.nuts ul li:nth-child(4) a {
+    background-color: white;
+    padding: 1vh;
+    color: #f2964b;
+    border-radius: 1vh;
 }
 
 #recipe:after {
@@ -141,7 +158,7 @@ footer {
     width: 6.3vw;
     height: 6vw;
     right: 0;
-    margin-left: 3vh;
+    margin-left: 2vh;
 }
 
 .aside {
@@ -298,7 +315,9 @@ input[type="radio"] {
     font-size: large;
     
 }
-
+.timeBottomMargin{
+    margin-bottom: 12vh;;
+}
 .textInputBoxes {
     width: 20%;
     height: 3vh;
@@ -431,14 +450,13 @@ svg.checked{
 }
 
 .difficulty{
-    width: 4.5rem;
-    right: .8rem; 
+    width: 11.6vh;
+    right: .2vh; 
 }
 
 .pages {
     float: right;
     margin: auto;
-    margin-bottom: rem;
     padding: 1rem;
     width: 83.5%;
     background-color: #fbdec6;
@@ -471,21 +489,29 @@ svg.checked{
     color: #fff;
 }
 
-footer {
+.recipeFooter {
     padding: 0 1rem 0;
-    clear: both;
-    height: 12vh;
+    float: right;
+    width: 83.5%;;
+    height: 13vh;
     padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     background: #EF7A1A;
-    z-index: 11;
+    z-index: 2;
+}.max-width{
+    max-width: 100%;
 }
-
+.recipeFooter h3{
+    font-size: 2.6vh;
+}
+.recipeFooter p, .recipeFooter li{
+    font-size: 2.3vh;
+}
 @media screen and (max-height: 1050px) {
     .aside {
-        height: 74.5vh;
+        height: 88vh;
         overflow-y: scroll;
         overflow-x: hidden;
     }
@@ -513,26 +539,25 @@ footer {
         transparent 75%,
         transparent)
     }
-    
+    .mainNavBar{
+        margin-left: 2vh;
+    }
     .header h1 {
         display: none;
     }
     
-    .header {
-        height: 12vh
-    }
-    
     #weblogo {
-        margin-left: .1rem;
+        margin-left: 1vh;
         width: 16vw;
     }
     
-    #mainNavBar ul {
+    .mainNavBar ul {
         column-gap: 1.5vh;
     }
     
-    #mainNavBar {
-        margin-left: 0;
+    .mainNavBar {
+        margin-left: 1vh;
+
     }
     
     .search-bar {
@@ -553,6 +578,7 @@ footer {
         width: 13.5vw;
         height: 12.5vh;
     }
+
     
     #lactose:after {
         content: '';
@@ -562,9 +588,22 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 12.5vh;
+        height: 9.5vh;
     }
     
+    .lactose ul li:nth-child(2) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
+    }
+    .gluten ul li:nth-child(3) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
+    }
+    .nuts ul li:nth-child(4) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
+    }
+
     #gluten:after {
         content: '';
         display: block;
@@ -573,8 +612,9 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 12.5vh;
+        height: 9.5vh;
     }
+    
     
     #nuts:after {
         content: '';
@@ -584,8 +624,7 @@ footer {
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 12.5vh;
-        max-height: max-content;
+        height: 9.5vh;
     }
     
     #nuts li:after {
@@ -605,10 +644,6 @@ footer {
         margin: .5VH;
     }
 
-    .difficulty{
-        right: 0; 
-    }
-
     label {
         font-size: 1rem;
     }
@@ -621,7 +656,7 @@ footer {
         display: none;
         top: 18vh;
         width: 32.5%;
-        height: 84.5vh;
+        height: 90vh;
         overflow: scroll;
     }
     
@@ -659,7 +694,8 @@ footer {
     }
 
     .difficulty{
-        right: 0; 
+        width: 8vh;
+        right: .2vh;  
     }
     
     .pages {
@@ -670,7 +706,7 @@ footer {
         display: none;
     }
     
-    footer {
+    .recipeFooter {
         display: none;
     }
 }
