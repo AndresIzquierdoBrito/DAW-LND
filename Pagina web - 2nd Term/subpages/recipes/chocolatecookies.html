@@ -5,8 +5,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chocolate Chip Cookies recipe</title>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <link rel="stylesheet" href="../../styles/recipeStyle.css">
+    <link rel="icon" type="image/x-icon" href="../../media/weblogo.ico">
 </head>
 <body>
-    
+    <div class="header">
+        <a href="../index.html"><img id="weblogo" src="../../media/weblogo.png" alt="weblogo"></a>
+        <a href="../index.html"><h1>BAKEDGOODS</h1></a>
+        <nav id="mainNavBar">
+            <ul>
+                <li><a href="./recipeMenu.html" id="recipe"></a></li>
+                <li><a href="#" id="lactose"></a></li>
+                <li><a href="#" id="gluten"></a></li>
+                <li><a href="#" id="nuts"></a></li>
+            </ul>
+        </nav>
+        <form action="get" class="search-bar">
+            <input type="search" name="search" pattern=".*\S.*" required>
+            <button class="search-btn" type="submit">
+                <span class="search-btn">Search</span>
+            </button>
+        </form>
+        <img class="searchbtnResponsive" src="../../media/navbar/search.png" alt="search">
+    </div>
+    <div class="recipeContent">
+        <div class="recipe">
+            <div class="leftRecipe">
+                <figure><img class="dessertImage" src="../../media/desserts/cookies.jpg" alt="chocolatecookies"></figure>
+                <h1>Chocolate Chip Cookies</h1>
+                <h3>The Classic Treat that Never Gets Old</h3>
+                <p>Enjoy the perfect blend of buttery dough and sweet chocolate in a warm chocolate chip cookie. It's a timeless treat that brings comfort and joy, whether as a midday snack or late-night indulgence. Share a batch with loved ones for sweet bliss.</p>
+            </div>  
+            <div class="rightRecipe">
+                <h1>Chocolate Chip Cookies</h1>
+                <h3>Prep Time: 15 minutes</h3>
+                <h3>Cook Time: 10 minutes</h3>
+                <h3>Yield: 24 cookies</h3>
+                <h3>Ingredients</h3>
+                <ul>
+                    <li>1 cup (2 sticks) unsalted butter, softened</li>
+                    <li>1 cup granulated sugar</li>
+                    <li>1 cup packed light brown sugar</li>
+                    <li>2 large eggs</li>
+                    <li>2 teaspoons vanilla extract</li>
+                    <li>2 1/4 cups all-purpose flour</li>
+                    <li>1 teaspoon baking soda</li>
+                    <li>1 teaspoon salt</li>
+                    <li>2 cups semisweet chocolate chips</li>
+                </ul>
+                <h3>Instructions</h3>
+                <ol>
+                    <li>Preheat oven to 375 degrees F. Line baking sheets with parchment paper or silicone baking mats.</li>
+                    <li>In a large bowl, cream together butter and sugars until light and fluffy. Beat in eggs and vanilla.</li>
+                    <li>In a separate bowl, whisk together flour, baking soda, and salt. Gradually add to butter mixture and mix until just combined. Stir in chocolate chips.</li>
+                    <li>Using a small cookie scoop or tablespoon, drop dough onto prepared baking sheets, spacing 2 inches apart. Bake for 10-12 minutes, or until edges are golden brown. Let cool on baking sheets for 5 minutes before transferring to wire racks to cool completely.</li>
+                </ol>
+                <input type="checkbox" id="start-animation">
+                <label class="animationButton"for="start-animation">Start animation</label>
+                <div class="progress-bar" id="progress-bar"></div>
+
+                <div id="progress-container">
+                </div>
+                
+                
+                
+            </div>
+        </div>
+        
+    </div>
 </body>
 </html>
