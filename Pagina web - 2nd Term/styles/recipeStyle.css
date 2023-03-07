@@ -1,3 +1,10 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Lato;
+}
+
 .recipeContent{
     position: relative;
     top: 0;
@@ -7,7 +14,6 @@
     align-items: center;
     justify-content: center;
     background-color: #fbdec6;
-    border: 1px solid red;
     
 }
 
@@ -23,11 +29,11 @@
     width: 50%;
     height: 100%;
     background-color: #f5f5f5;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-right: 1px solid #f2964b;
 }
 
 figure{
@@ -38,89 +44,208 @@ figure{
 
 .dessertImage{
     height: 100%;  
-    width: 100%;
+    width: 95%;
     background-color: #f5f5f5;
-    border: 1px solid red;
     background-size: cover;
     background-repeat: no-repeat;
-	transform: scale(1);
-	transition: .3s ease-in-out;
+    transform: scale(1);
+    transition: .3s ease-in-out;
 }
 
 .dessertImage:hover{
-	transform: scale(1.3);
+    transform: scale(1.3);
 }
 
 .leftRecipe h1{
-    font-size: 2.5vw;
-    text-align: center;
+    font-size: 5vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-.leftRecipe h1:before {
-    position: relative;
-  background-color: red;
-  content: "";
-  display: block;
-  width: 0%;
-  height: 2px;
-  left: 0;
-  bottom: 0;
-  transition: all 2s cubic-bezier(0.455, 0.03, 0.515, 0.955)
-}
-.leftRecipe h1:hover:before {
-    color: red;
-    width: 100%;
+
+.leftRecipe h1:hover {
+    color: #f2964b;
 }
 
 .leftRecipe h3{
-    font-size: 1.5vw;
+    font-size: 2.5vh;
     text-align: center;
+    font-style: italic;
     margin: 0;
     padding: 0;
 }
 
 .leftRecipe p{
-    font-size: 1.2vw;
+    font-size: 2vh;
     text-align: justify;
     margin: 0 5vh 0;
     padding: 0;
 }
+.miniData{
+    right: 50%;
+    top: 3vh;
+    margin:3vh 3vh 3.6vh 3vh;
+}
 
+.miniData p{
+    font-size: 2.5vw;
+    text-align: center;
+    margin: 2vh 0vh .5vh;
+}
+
+.miniData img{
+    position: absolute;
+    right: 4.5vw;
+    margin-top: 2vh;
+}
+
+.miniDataImageLarge{
+    top: 15.5vh;
+    right: 1vw !important; 
+}
+
+svg{
+    width: 5vw;
+    height: 5vw;
+    margin: 7.3vw;
+    margin-top: 3.2vw;
+}
+
+.allergy{
+    position: absolute;
+    left: 0;
+    width: 6vw;
+    top: 0;
+    margin: 6.6vw;
+    margin-top: 10vw;
+    filter: invert(100%);
+}
 .rightRecipe{
     width: 50%;
     height: 100%;
     background-color: #f5f5f5;
-    border: 1px solid red;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
     overflow-y: scroll;
     overflow-x: hidden;
+    padding-top: 1.5vw;
 }
 
+.rightRecipe h3{
+    margin: 0 5vh 0;
+    padding: 0;
+}
 
+.rightRecipe ol, .rightRecipe ul{
+    margin: 0 10vh 0;
+    padding: 0;
+}
+
+table{
+    margin-left: 3vw;
+    margin-right: 2vw;
+    margin: 2vw 3vw 2vw 2vw;
+}
+
+table, th, td{
+    border: 2px solid #f2964b;
+    border-collapse: collapse;
+}
+
+table tr:nth-child(even):nth-child(-n + 4){
+    background-color: #f2964b1c;
+}
+
+th, td{
+    padding: 1vw;
+    text-align: center;
+}
+
+th{
+    background-color: #f2964b6b;
+}
+
+tr:nth-child(1),
+tr:nth-child(5) {
+    background-color: #F90;
+    font-size: 1.1vw;
+}
 .animationButton{
     flex-basis: 10%;
+    color: black;
+    text-shadow: none;
 }
+.animationButton:hover{
+    color: #f2964b;
+    font-size: 1.6rem;
+}
+
+.progress-bar-wrapper {
+    width: 34vw;
+    height: 6vh;
+    margin: 2vh 2vh 3vh;
+    border: 2px solid #f2964b;
+    box-sizing: border-box;
+    overflow: hidden;
+    float: left;
+}
+
 .progress-bar {
     width: 0;
-    height: 20px;
-    background-color: blue;
-  }
-  
-  #start-animation:checked ~ #progress-bar {
-    animation: fill-progress 5s linear forwards;
-  }
-  
-  @keyframes fill-progress {
+    height: 100%;
+    background-color: #F90;
+    background-image: -webkit-linear-gradient(45deg,
+    rgba(255, 255, 255, .2) 25%,
+    transparent 25%,
+    transparent 50%,
+    rgba(255, 255, 255, .2) 50%,
+    rgba(255, 255, 255, .2) 75%,
+    transparent 75%,
+    transparent);
+    box-sizing: border-box;
+
+}
+
+.checkmark{
+    float: right;
+    position: relative;
+    width: 5.2vw;
+    display: block;
+    opacity: 0;
+}
+.checkmarkWrapper{
+    float: right;
+    position: relative;
+    width: 5.2vw;
+    right: 1.5vw;
+    border: 2px solid #f2964b;
+    border-radius: 3rem;
+}
+
+.animationButton #start-animation:checked ~ .progress-bar-wrapper .progress-bar {
+    animation: fill-progress 12s linear forwards;
+}
+.animationButton #start-animation:checked ~ .checkmarkWrapper > .checkmark {
+    animation: show-checkmark 12s ease-in-out .5s forwards;
+    display: block;
+}
+@keyframes fill-progress {
     0%{
-      width: 0;
+        width: 0;
     }
     100%{
-      width: 100%;
+        width: 100%;
     }
-  }
+}
+@keyframes show-checkmark {
+    0% {
+        opacity: 0;
+    }
+    95% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

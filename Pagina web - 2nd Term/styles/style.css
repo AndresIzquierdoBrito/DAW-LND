@@ -54,7 +54,7 @@ a{
     text-decoration: none;
 }
 
-a:visited{
+.contents a:visited{
     color: black;
 }
 
@@ -254,7 +254,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
-    justify-content: space-around;
 }
 
 .hidden-div.hidden {
@@ -262,6 +261,10 @@ footer {
     overflow: hidden;
     max-height: 0;
     transition: visibility .35s, max-height .35s ease-in;
+}
+
+.justifyContentFlexStart{
+    justify-content:baseline;
 }
 
 label {
@@ -273,6 +276,7 @@ label {
     color: white;
     text-shadow: 2px 2px 4px #442105;
 }
+
 select {
     width: 75%;
     height: 2.6rem;
@@ -292,7 +296,6 @@ select {
 input[type="checkbox"] {
     margin-left: .5rem;
     margin-top: 1.5rem;
-    
 }
 
 input[type="radio"] {
@@ -313,6 +316,7 @@ input[type="radio"] {
 .timeParagraphs {
     text-shadow: 2px 2px 4px #442105;
     font-size: large;
+    margin: 0 2px 0;
     
 }
 .timeBottomMargin{
@@ -449,7 +453,7 @@ svg.checked{
     margin-top: -1.3vh;
 }
 
-.difficulty{
+.miniDataImageLarge{
     width: 11.6vh;
     right: .2vh; 
 }
@@ -578,8 +582,7 @@ svg.checked{
         width: 13.5vw;
         height: 12.5vh;
     }
-
-    
+ 
     #lactose:after {
         content: '';
         display: block;
@@ -588,21 +591,9 @@ svg.checked{
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 9.5vh;
+        height: 12.5vh;
     }
-    
-    .lactose ul li:nth-child(2) a {
-        padding: 0;
-        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
-    }
-    .gluten ul li:nth-child(3) a {
-        padding: 0;
-        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
-    }
-    .nuts ul li:nth-child(4) a {
-        padding: 0;
-        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
-    }
+
 
     #gluten:after {
         content: '';
@@ -612,7 +603,7 @@ svg.checked{
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 9.5vh;
+        height: 12.5vh;;
     }
     
     
@@ -624,11 +615,20 @@ svg.checked{
         background-repeat: no-repeat;
         background-position: center;
         width: 13.5vw;
-        height: 9.5vh;
+        height: 12.5vh;
     }
-    
-    #nuts li:after {
-        width: 100%;
+
+    .lactose ul li:nth-child(2) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
+    }
+    .gluten ul li:nth-child(3) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
+    }
+    .nuts ul li:nth-child(4) a {
+        padding: 0;
+        filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
     }
     
     .search-bar input {

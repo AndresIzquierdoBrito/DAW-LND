@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
             
         });
     });
-
+    
     const icons = document.querySelectorAll('svg');
     icons.forEach(function(icon) {
         icon.addEventListener('click', function(event) {
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function() {
             icon.classList.toggle('checked');
         });
     });
-
+    
     const hamburgerMenu = document.querySelector('.hamburger-menu');
     const aside = document.querySelector('.aside');
     const article = document.querySelector('.articles');
@@ -48,4 +48,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 mini.style.display = 'block';
             }
         });
-});});
+        
+
+    });
+});

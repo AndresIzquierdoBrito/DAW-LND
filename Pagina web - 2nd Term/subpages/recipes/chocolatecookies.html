@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="../../styles/style.css">
     <link rel="stylesheet" href="../../styles/recipeStyle.css">
     <link rel="icon" type="image/x-icon" href="../../media/weblogo.ico">
+    <script src="../../js/scripts.js"></script>
 </head>
 <body>
     <div class="header">
-        <a href="../index.html"><img id="weblogo" src="../../media/weblogo.png" alt="weblogo"></a>
-        <a href="../index.html"><h1>BAKEDGOODS</h1></a>
-        <nav id="mainNavBar">
+        <a href="../../index.html"><img id="weblogo" src="../../media/weblogo.png" alt="weblogo"></a>
+        <a href="../../index.html"><h1>BAKEDGOODS</h1></a>
+        <nav class="mainNavBar">
             <ul>
-                <li><a href="./recipeMenu.html" id="recipe"></a></li>
-                <li><a href="#" id="lactose"></a></li>
-                <li><a href="#" id="gluten"></a></li>
-                <li><a href="#" id="nuts"></a></li>
+                <li><a href="../recipeMenu.html" id="recipe"></a></li>
+                <li><a href="../recipeMenuLactose.html" id="lactose"></a></li>
+                <li><a href="../recipeMenuGluten.html" id="gluten"></a></li>
+                <li><a href="../recipeMenuNuts.html" id="nuts"></a></li>
             </ul>
         </nav>
         <form action="get" class="search-bar">
@@ -32,47 +33,93 @@
     <div class="recipeContent">
         <div class="recipe">
             <div class="leftRecipe">
-                <figure><img class="dessertImage" src="../../media/desserts/cookies.jpg" alt="chocolatecookies"></figure>
-                <h1>Chocolate Chip Cookies</h1>
-                <h3>The Classic Treat that Never Gets Old</h3>
-                <p>Enjoy the perfect blend of buttery dough and sweet chocolate in a warm chocolate chip cookie. It's a timeless treat that brings comfort and joy, whether as a midday snack or late-night indulgence. Share a batch with loved ones for sweet bliss.</p>
-            </div>  
-            <div class="rightRecipe">
-                <h1>Chocolate Chip Cookies</h1>
-                <h3>Prep Time: 15 minutes</h3>
-                <h3>Cook Time: 10 minutes</h3>
-                <h3>Yield: 24 cookies</h3>
-                <h3>Ingredients</h3>
-                <ul>
-                    <li>1 cup (2 sticks) unsalted butter, softened</li>
-                    <li>1 cup granulated sugar</li>
-                    <li>1 cup packed light brown sugar</li>
-                    <li>2 large eggs</li>
-                    <li>2 teaspoons vanilla extract</li>
-                    <li>2 1/4 cups all-purpose flour</li>
-                    <li>1 teaspoon baking soda</li>
-                    <li>1 teaspoon salt</li>
-                    <li>2 cups semisweet chocolate chips</li>
-                </ul>
-                <h3>Instructions</h3>
-                <ol>
-                    <li>Preheat oven to 375 degrees F. Line baking sheets with parchment paper or silicone baking mats.</li>
-                    <li>In a large bowl, cream together butter and sugars until light and fluffy. Beat in eggs and vanilla.</li>
-                    <li>In a separate bowl, whisk together flour, baking soda, and salt. Gradually add to butter mixture and mix until just combined. Stir in chocolate chips.</li>
-                    <li>Using a small cookie scoop or tablespoon, drop dough onto prepared baking sheets, spacing 2 inches apart. Bake for 10-12 minutes, or until edges are golden brown. Let cool on baking sheets for 5 minutes before transferring to wire racks to cool completely.</li>
-                </ol>
-                <input type="checkbox" id="start-animation">
-                <label class="animationButton"for="start-animation">Start animation</label>
-                <div class="progress-bar" id="progress-bar"></div>
-
-                <div id="progress-container">
-                </div>
-                
-                
-                
+                <svg width="100" height="100" viewBox="0 0 25 20" xmlns="http://www.w3.org/2000/svg"
+                fill-rule="evenodd" clip-rule="evenodd">
+                <path
+                d="M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181" />
+            </svg>
+            <img class="allergy" src="../../media/navbar/nutsfree.png" alt="">
+            <figure><img class="dessertImage" src="../../media/desserts/cookies.jpg" alt="chocolatecookies"></figure>
+            <div class="miniData">
+                <img class="miniDataImages" src="../../media/calories.png" alt="">
+                <p>450</p>
+                <img class="miniDataImages" src="../../media/people.png" alt="">
+                <p>6+</p>
+                <img class="miniDataImages miniDataImageLarge" src="../../media/greenMeter.png" alt="">
             </div>
+            <h1>Chocolate Chip Cookies</h1>
+            <h3>The Classic Treat that Never Gets Old</h3>
+            <p>Enjoy the perfect blend of buttery dough and sweet chocolate in a warm chocolate chip cookie. It's a timeless treat that brings comfort and joy, whether as a midday snack or late-night indulgence. Share a batch with loved ones for sweet bliss.</p>
+        </div>  
+        <div class="rightRecipe">
+            <h3>Prep Time: 15 minutes</h3>
+            <h3>Cook Time: 10 minutes</h3>
+            <h3>Yield: 24 cookies</h3><br>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>1 cup (2 sticks) unsalted butter, softened</li>
+                <li>1 cup granulated sugar</li>
+                <li>1 cup packed light brown sugar</li>
+                <li>2 large eggs</li>
+                <li>2 teaspoons vanilla extract</li>
+                <li>2 1/4 cups all-purpose flour</li>
+                <li>1 teaspoon baking soda</li>
+                <li>1 teaspoon salt</li>
+                <li>2 cups semisweet chocolate chips</li><br>
+            </ul>
+            <h3>Instructions</h3>
+            <ol>
+                <li>Preheat oven to 375 degrees F. Line baking sheets with parchment paper or silicone baking mats.</li>
+                <li>In a large bowl, cream together butter and sugars until light and fluffy. Beat in eggs and vanilla.</li>
+                <li>In a separate bowl, whisk together flour, baking soda, and salt. Gradually add to butter mixture and mix until just combined. Stir in chocolate chips.</li>
+                <li>Using a small cookie scoop or tablespoon, drop dough onto prepared baking sheets, spacing 2 inches apart. Bake for 10-12 minutes, or until edges are golden brown. Let cool on baking sheets for 5 minutes before transferring to wire racks to cool completely.</li>
+            </ol>
+            <table>
+                <tr>
+                    <th colspan="4">Measurements</th>
+                </tr>
+                <tr>
+                    <td>1 teaspoon</td>
+                    <td></td>
+                    <td>1/3 tablespoon</td>
+                    <td>5ml</td>
+                </tr>
+                <tr>
+                    <td>1 cup</td>
+                    <td>8 fluid ounces/ 1/2 pint</td>
+                    <td>16 tablespoons</td>
+                    <td>237 ml</td>
+                </tr>
+                <tr>
+                    <td>2 cup</td>
+                    <td>16 fluid ounces/ 1 pint</td>
+                    <td>32 tablespoons</td>
+                    <td>473 ml</td>
+                </tr>
+                <tr>
+                    <th colspan="4">Temperature conversion</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Fº</th>
+                    <th colspan="2">Cº</th>
+                </tr>
+                <tr>
+                    <td colspan="2">375ºF</td>
+                    <td colspan="2">185ºC</td>
+                </tr>
+            </table>
+            <label class="animationButton"for="start-animation">Baking time: 10 minutes
+                <input type="checkbox" id="start-animation">
+                <div class="progress-bar-wrapper">
+                    <div class="progress-bar" id="progress-bar"></div>
+                </div>
+                <div class="checkmarkWrapper">
+                    <img class="checkmark" src="../../media/check.png" alt="">
+                </div>
+            </label>  
         </div>
-        
     </div>
+    
+</div>
 </body>
 </html>
