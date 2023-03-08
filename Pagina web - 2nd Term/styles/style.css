@@ -54,7 +54,7 @@ a{
     text-decoration: none;
 }
 
-.contents a:visited{
+.contents a, .contents a:visited{
     color: black;
 }
 
@@ -63,6 +63,7 @@ a{
 .hidden-div>p,
 .pages a,
 footer {
+    text-decoration: none;
     color: white;
     font-weight: normal;
     font-style: normal;
