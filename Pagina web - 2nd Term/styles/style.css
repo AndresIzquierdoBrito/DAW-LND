@@ -54,7 +54,7 @@ a{
     text-decoration: none;
 }
 
-.contents a:visited{
+.contents a:visited, .contents a{
     color: black;
 }
 
