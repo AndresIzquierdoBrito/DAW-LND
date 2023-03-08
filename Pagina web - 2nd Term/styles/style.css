@@ -63,7 +63,6 @@ a{
 .hidden-div>p,
 .pages a,
 footer {
-    text-decoration: none;
     color: white;
     font-weight: normal;
     font-style: normal;
@@ -203,7 +202,6 @@ footer {
 
 .extraMarginDividers {
     margin-top: 1rem;
-    
 }
 
 .filter {
@@ -226,7 +224,6 @@ footer {
     width: 100%;
     opacity: 0;
     transition: opacity 0.35s, transform 0.35s;
-    
 }
 
 .filter:before {
@@ -319,9 +316,11 @@ input[type="radio"] {
     margin: 0 2px 0;
     
 }
+
 .timeBottomMargin{
     margin-bottom: 12vh;;
 }
+
 .textInputBoxes {
     width: 20%;
     height: 3vh;
@@ -365,6 +364,7 @@ article{
     box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px, rgba(0, 0, 0, 0.3) 0px 14px 28px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
     transform: translate(0, -5px);
 }
+
 article h1,
 article h3,
 article p {
@@ -507,12 +507,15 @@ svg.checked{
 }.max-width{
     max-width: 100%;
 }
+
 .recipeFooter h3{
     font-size: 2.6vh;
 }
+
 .recipeFooter p, .recipeFooter li{
     font-size: 2.3vh;
 }
+
 @media screen and (max-height: 1050px) {
     .aside {
         height: 88vh;
@@ -582,7 +585,7 @@ svg.checked{
         width: 13.5vw;
         height: 12.5vh;
     }
- 
+
     #lactose:after {
         content: '';
         display: block;
@@ -594,7 +597,6 @@ svg.checked{
         height: 12.5vh;
     }
 
-
     #gluten:after {
         content: '';
         display: block;
@@ -605,8 +607,7 @@ svg.checked{
         width: 13.5vw;
         height: 12.5vh;;
     }
-    
-    
+
     #nuts:after {
         content: '';
         display: block;
@@ -622,10 +623,12 @@ svg.checked{
         padding: 0;
         filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
     }
+    
     .gluten ul li:nth-child(3) a {
         padding: 0;
         filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));
     }
+
     .nuts ul li:nth-child(4) a {
         padding: 0;
         filter: drop-shadow(0 0 0.5rem rgba(255, 255, 255, 0.562));

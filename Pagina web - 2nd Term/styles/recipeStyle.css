@@ -121,6 +121,7 @@ svg{
     margin-top: 10vw;
     filter: invert(100%);
 }
+
 .rightRecipe{
     width: 50%;
     height: 100%;
@@ -204,7 +205,6 @@ tr:nth-child(5) {
     transparent 75%,
     transparent);
     box-sizing: border-box;
-
 }
 
 .checkmark{
@@ -214,6 +214,7 @@ tr:nth-child(5) {
     display: block;
     opacity: 0;
 }
+
 .checkmarkWrapper{
     float: right;
     position: relative;
@@ -226,10 +227,12 @@ tr:nth-child(5) {
 .animationButton #start-animation:checked ~ .progress-bar-wrapper .progress-bar {
     animation: fill-progress 12s linear forwards;
 }
+
 .animationButton #start-animation:checked ~ .checkmarkWrapper > .checkmark {
     animation: show-checkmark 12s ease-in-out .5s forwards;
     display: block;
 }
+
 @keyframes fill-progress {
     0%{
         width: 0;
@@ -238,6 +241,7 @@ tr:nth-child(5) {
         width: 100%;
     }
 }
+
 @keyframes show-checkmark {
     0% {
         opacity: 0;
