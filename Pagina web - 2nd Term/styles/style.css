@@ -459,6 +459,11 @@ svg.checked{
     right: .2vh; 
 }
 
+.difficulty{
+    width: 8vh;
+    right: 1vh;  
+}
+
 .pages {
     float: right;
     margin: auto;
