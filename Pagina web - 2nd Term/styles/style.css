@@ -54,7 +54,11 @@ a{
     text-decoration: none;
 }
 
+<<<<<<< Updated upstream
 .contents a:visited, .contents a{
+=======
+.contents a, .contents a:visited{
+>>>>>>> Stashed changes
     color: black;
 }
 
@@ -63,6 +67,7 @@ a{
 .hidden-div>p,
 .pages a,
 footer {
+    text-decoration: none;
     color: white;
     font-weight: normal;
     font-style: normal;
