@@ -1,5 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
     
+    const areas = document.querySelectorAll('area');
+    const imageNextToMap = document.querySelector('.imageNextToMap');
+    
+    areas.forEach(area => {
+        area.addEventListener('mouseover', () => {
+            const imageSrc = area.dataset.image;
+            imageNextToMap.src = imageSrc;
+            imageNextToMap.alt = imageSrc;
+            document.querySelector('.imageNextToMap').style.display = 'block';
+        });
+        
+        area.addEventListener('mouseout', () => {
+            document.querySelector('.imageNextToMap').style.display = 'none';
+        });
+    });
+    
     const clickableTexts = document.querySelectorAll('.clickable-text');
     
     clickableTexts.forEach(clickableText => {
@@ -49,6 +65,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
         
-
+        
     });
 });

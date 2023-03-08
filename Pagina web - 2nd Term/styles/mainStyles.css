@@ -50,7 +50,7 @@
 
 .mainNavBar ul li a{
     position: relative;
-
+    
 }
 a{
     display: flex;
@@ -141,7 +141,7 @@ a:hover > .mainNavBarAllergens{
     transition: all 0.3s ease-in-out;
 }
 
-.box:hover{
+.box:hover, .imageNextToMap:hover{
     box-shadow: rgba(0, 0, 0, 0.5) 0px 8px 16px, rgba(0, 0, 0, 0.3) 0px 14px 28px -6px, rgba(0, 0, 0, 0.2) 0px -6px 0px inset;
     transform: translate(0, -5px);
 }
@@ -154,7 +154,7 @@ a:hover > .mainNavBarAllergens{
 }
 .dessertSelectTitle{
     font-size: 3.2vw;
-    text-shadow: 2px 8px 6px rgba(0,0,0,0.2), 0px -5px 35px rgba(255,255,255,0.3);
+    text-shadow: 4px 10px 6px rgba(0,0,0,0.6), 0px -5px 35px rgba(255,255,255,0.7);
     margin: 0;
     position: absolute;
     top: 50%;
@@ -163,19 +163,84 @@ a:hover > .mainNavBarAllergens{
     color: white;
 }
 .mainContent{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    
     height: 100%;
     width: 100%;
 }
 
 .desserts{
+    float: right;
+    width: 60%;
     margin: 2vw;
-    width: 50%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.dessertBoxTitle{
+    font-size: 3vw;
+    margin: 0;
+    margin: 2vw 4vw 2vw 4vw;
+    float: left;
+    width: 20%;
+    color: white;
+    text-shadow: 4px 10px 6px rgba(0,0,0,0.3), 0px -5px 35px rgba(255,255,255,0.4);
+
+}
+.mapContainer:hover .imageNextToMap {
+    visibility: visible;
+}
+
+.imageNextToMap{
+    width: 30vw;
+    height: 60vh;
+    margin-left: 4vw;
+    margin-bottom: 2vh;
+    margin-top: 20vh;
+    background-color: white;
+    float : left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.dessertImage{
+    transition: .3s ease-in-out;
+}
+
+.dessertImage:hover{
+    transform: scale(1.05);
+}
+
+.imageNextToMap p{
+    margin-top: 1vw;
+    font-size: 1.2vw;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.imageNextToMap h2{
+    margin: 0;
+    margin-top: 1vw;
+    font-size: 2vw;
+    color: white;
+    background-color: #ef7a1a;
+    border-radius: 10px;
+    padding: 10px;
+    
+}
+
+.hidden{
+    display: none;
+}
+
+#area1:hover ~ .imageNextToMap{
+    border: 1px solid green;
+    background-color: red;
 }
 
 footer{
     width: 100% !important;
+    overflow: hidden;
 }
