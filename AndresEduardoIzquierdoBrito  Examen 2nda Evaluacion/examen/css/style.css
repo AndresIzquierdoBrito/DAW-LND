@@ -1,0 +1,174 @@
+body{
+    background-color: NavajoWhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Logo */
+
+.logo{
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    width: 70px;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    margin: 3rem;
+}
+.logo div{
+    height: 30px;
+    width: 30px;
+    box-shadow: #000 0px 0px 10px;
+}
+
+.logo div:nth-child(1){
+    background-color: #FFD700;
+    border-radius: 30px 50px 0;
+}
+
+.logo div:nth-child(2){
+    background-color: #C0C0C0;
+    border-radius: 50px 30px 50px 0;
+}
+
+.logo div:nth-child(3){
+    background-color: #4169E1;
+    border-radius: 50px 0 50px 30px;
+}
+
+.logo div:nth-child(4){
+    background-color: #006400;
+    border-radius: 0 50px 30px;
+}
+
+.logo:hover > div{
+    animation-name: logoSpin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes logoSpin {
+    0%{
+        transform: rotate(0);
+        padding: 0;
+    }
+    50%{
+        transform: rotate(180deg);
+        margin: 10px;
+    }
+    100%{
+        transform: rotate(360deg) translate(0, 0);
+        padding: 0;
+    }
+}
+
+/* Letras */
+
+.letras{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+.letras div{
+    width: 80px;
+    height: 100px;
+    transition: transform ease-in-out .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.letras div:nth-child(6){
+    margin-right: 5rem;
+    transform: skew(20deg);
+}
+
+.letras div:nth-child(even){
+    background-color: IndianRed;
+    transform: skewY(-20deg);
+}
+
+.letras div:nth-child(odd){
+    background-color: FireBrick;
+    transform:  skewY(20deg);
+}
+
+.letras div:hover{
+    transform: skewY(0);
+}
+
+/* Animacion */
+
+.animationBox{
+    width: fit-content;
+    padding: 0 2rem 0;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: darkblue 1px 1px 1px ,#00000096 3px 3px 1px;
+    background-color: silver;
+    margin: auto;
+    margin-top: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.3rem;
+    color: navy;
+    font-weight: bold;
+    text-shadow: rgba(255, 255, 255, 0.589) 2px 2px 1px ,#00000096 4px 2px 1px;;
+}
+.words{
+    text-align: center;
+    display: inline-block;
+    height: 250px;
+    margin: 10px;
+    position: relative;
+    top: 4.2rem;
+    overflow: hidden;
+    text-shadow: none;
+    animation-name: wordList;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+.words p{
+    margin-bottom: -1.5rem;
+}
+
+@keyframes wordList {
+    0%{
+        transform: translateY(0);
+    }
+    15%{
+        transform: translateY(0);
+    }
+    30%{
+        transform: translateY(-3.4rem);
+    }
+    45%{
+        transform: translateY(-3.4rem);
+    }
+    60%{
+        transform: translateY(-6.8rem);
+    }
+    75%{
+        transform: translateY(-6.8rem);
+    }
+    90%{
+        transform: translateY(-10.2rem);
+    }
+    100%{
+        transform: translateY(-10.2rem);
+    }
+}
+
+.animationBox:hover > .words p{
+    display: none;
+}
