@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<menu>
+    <pizza tipo="Barbacoa" precio="8">
+        <ingredientes>
+            <ingrediente>Salsa Barbacoa</ingrediente>
+            <ingrediente>Queso</ingrediente>
+            <ingrediente>Pollo</ingrediente>
+            <ingrediente>Bacon</ingrediente>
+            <ingrediente>Jamón</ingrediente>
+            <ingrediente>Ternera</ingrediente>
+        </ingredientes>
+    </pizza>
+    <pizza tipo="Hawaiana" precio="7">
+        <ingredientes>
+            <ingrediente>Tomate</ingrediente>
+            <ingrediente>Queso</ingrediente>
+            <ingrediente>Mozarella</ingrediente>
+            <ingrediente>Piña</ingrediente>
+            <ingrediente>Jamón</ingrediente>
+            <ingrediente>Queso</ingrediente>
+        </ingredientes>
+    </pizza>
+    <pizza tipo="4 Quesos" precio="7">
+        <ingredientes>
+            <ingrediente>Tomate</ingrediente>
+            <ingrediente>Mezcla de 4 quesos</ingrediente>
+        </ingredientes>
+    </pizza>
+    <pizza tipo="Margarita" precio="6">
+        <ingredientes>
+            <ingrediente>Tomate</ingrediente>
+            <ingrediente>Queso</ingrediente>
+            <ingrediente>Jamón</ingrediente>
+        </ingredientes>
+    </pizza>
+</menu>

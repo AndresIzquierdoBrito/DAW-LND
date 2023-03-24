@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+<lista-correos>
+    <correo>
+        <origen>Pepe</origen>
+        <destinatarios>
+            <destinatario>Juan</destinatario>
+            <destinatario>Peter</destinatario>
+            <destinatario>John</destinatario>
+        </destinatarios>
+        <asunto>Reunion 23-12</asunto>
+        <cuerpo>Quedamos en la sala de reuniones a las 10:00</cuerpo>
+        <fichero-adjuntos>
+            <fichero>reunion.doc</fichero>
+            <fichero>reunion.pdf</fichero>
+        </fichero-adjuntos>
+    </correo>
+    <correo>
+        <origen>Pepe</origen>
+        <destinatarios>
+            <destinatario>Juan</destinatario>
+        </destinatarios>
+        <asunto>Re: Reunion 23-12</asunto>
+        <cuerpo>Ok, lo tengo apuntado</cuerpo>
+        <fichero-adjunto>
+            <fichero>reunion.pdf</fichero>
+        </fichero-adjunto>
+    </correo>
+    <correo>
+        <origen>Pepe</origen>
+        <destinatarios>
+            <destinatario>Juan</destinatario>
+        </destinatarios>
+        <asunto>Re: Re: Reunion 23-12</asunto>
+        <cuerpo>Gracias</cuerpo>
+        <fichero-adjunto>
+            <fichero>reunion.pdf</fichero>
+        </fichero-adjunto>
+    </correo>
+</lista-correos>
