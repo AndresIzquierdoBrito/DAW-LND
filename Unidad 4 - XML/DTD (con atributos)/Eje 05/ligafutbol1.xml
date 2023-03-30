@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE resultados [
+    <!ELEMENT resultados (partido)*>
+    <!ELEMENT partido (equipo, equipo)>
+    <!ELEMENT equipo (nombre, tipo, goles)>
+    <!ELEMENT tipo (#PCDATA)>
+    <!ELEMENT nombre (#PCDATA)>
+    <!ELEMENT goles (#PCDATA)>
+]>
+
+<resultados>
+    <partido>
+        <equipo>
+            <nombre>Vodka Juniors</nombre>
+            <tipo>local</tipo>
+            <goles>0</goles>
+        </equipo>
+        <equipo>
+            <nombre>Vodka Juniors</nombre>
+            <tipo>visitante</tipo>
+            <goles>1</goles>
+        </equipo>    
+    </partido>
+    <partido>
+        <equipo>
+            <nombre>Vodka Juniors</nombre>
+            <tipo>local</tipo>
+            <goles>3</goles>
+        </equipo>
+        <equipo>
+            <nombre>Sparta da Risa</nombre>
+            <tipo>visitante</tipo>
+            <goles>3</goles>
+        </equipo>
+    </partido>
+    <partido>
+        <equipo>
+            <nombre>Water de Munich</nombre>
+            <tipo>local</tipo>
+            <goles>4</goles>
+        </equipo>
+        <equipo>
+            <nombre>Esteaua es del grifo</nombre>
+            <tipo>visitante</tipo>
+            <goles>2</goles>
+        </equipo> 
+    </partido>
+</resultados>

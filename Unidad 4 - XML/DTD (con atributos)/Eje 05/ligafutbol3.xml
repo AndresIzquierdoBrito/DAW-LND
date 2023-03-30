@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE resultados [
+    <!ELEMENT resultados (partido)*>
+    <!ELEMENT partido (equipo, equipo)>
+    <!ELEMENT equipo EMPTY>
+    <!ATTLIST equipo tipo (local|visitante) #REQUIRED>
+    <!ATTLIST equipo nombre CDATA #REQUIRED>
+    <!ATTLIST equipo goles NMTOKEN #REQUIRED>
+]>
+
+<resultados>
+    <partido>
+        <equipo tipo="local" nombre="Nottingham Presa" goles="0"/>
+        <equipo tipo="visitante" nombre="Inter de Mitente" goles="1"/>
+    </partido>
+    <partido>
+        <equipo tipo="local" nombre="Vodka Juniors" goles="3"/>
+        <equipo tipo="visitante" nombre="Sparta da Risa" goles="3"/>
+    </partido>
+    <partido>
+        <equipo tipo="local" nombre="Water de Munich" goles="0"/>
+        <equipo tipo="visitante" nombre="Inter de Mitente" goles="1"/>
+    </partido>
+</resultados>
