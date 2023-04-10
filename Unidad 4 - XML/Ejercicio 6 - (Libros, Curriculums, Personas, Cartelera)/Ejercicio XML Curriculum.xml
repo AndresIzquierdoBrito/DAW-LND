@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?> 
+<!DOCTYPE curriculums [
+    <!ELEMENT curriculums (CV)*>
+    <!ELEMENT CV (DatosPersonales, Idiomas)>
+    <!ATTLIST CV dni NMTOKEN #REQUIRED>
+    <!ATTLIST CV fechacv CDATA #REQUIRED>
+    <!ELEMENT DatosPersonales (Nombre, Apellido1, Apellido2, Fechanac, (Direccion?, Direccion?))>
+    <!ELEMENT Nombre (#PCDATA)>
+    <!ELEMENT Apellido1 (#PCDATA)>
+    <!ELEMENT Apellido2 (#PCDATA)>
+    <!ELEMENT Fechanac (#PCDATA)>
+    <!ELEMENT Direccion (Calle, Localidad, CodigoPostal, Pais)>
+    <!ATTLIST Direccion caracter (trabajo|particular) #REQUIRED>
+    <!ELEMENT Calle (#PCDATA)>
+    <!ELEMENT Localidad (#PCDATA)>
+    <!ELEMENT CodigoPostal (#PCDATA)>
+    <!ELEMENT Pais (#PCDATA)>
+    <!ELEMENT Idiomas (Idioma*)>
+    <!ELEMENT Idioma (nombreIdioma)>
+    <!ELEMENT nombreIdioma (#PCDATA)>
+    <!ATTLIST Idioma nivel (alto|medio|bajo) #REQUIRED>
+    <!ATTLIST Idioma caracter (materno|extranjero) #REQUIRED>
+]>
+<curriculums>
+    <CV dni="123456789A" fechacv="2/23/2022">
+        <DatosPersonales>
+            <Nombre>Pepe</Nombre>
+            <Apellido1>Pepe</Apellido1>
+            <Apellido2>Pepe</Apellido2>
+            <Fechanac>3/4/1998</Fechanac>
+            <Direccion caracter="trabajo">
+                <Calle>Pepe</Calle>
+                <Localidad>Pepe</Localidad>
+                <CodigoPostal>Pepe</CodigoPostal>
+                <Pais>Pepe</Pais>
+            </Direccion>
+        </DatosPersonales>
+        <Idiomas>
+            <Idioma nivel="alto" caracter="materno"><nombreIdioma>Español</nombreIdioma></Idioma>
+            <Idioma nivel="medio" caracter="extranjero"><nombreIdioma>Ingles</nombreIdioma></Idioma>
+            <Idioma nivel="bajo" caracter="extranjero"><nombreIdioma>Frances</nombreIdioma></Idioma>
+        </Idiomas>
+    </CV>
+    <CV dni="123456789A" fechacv="2/23/2022">
+        <DatosPersonales>
+            <Nombre>Pepe</Nombre>
+            <Apellido1>Pepe</Apellido1>
+            <Apellido2>Pepe</Apellido2>
+            <Fechanac>3/4/1998</Fechanac>
+            <Direccion caracter="trabajo">
+                <Calle>Pepe</Calle>
+                <Localidad>Pepe</Localidad>
+                <CodigoPostal>Pepe</CodigoPostal>
+                <Pais>Pepe</Pais>
+            </Direccion>
+        </DatosPersonales>
+        <Idiomas>
+            <Idioma nivel="alto" caracter="materno"><nombreIdioma>Español</nombreIdioma></Idioma>
+            <Idioma nivel="medio" caracter="extranjero"><nombreIdioma>Ingles</nombreIdioma></Idioma>
+            <Idioma nivel="bajo" caracter="extranjero"><nombreIdioma>Frances</nombreIdioma></Idioma>
+        </Idiomas>
+    </CV>
+    <CV dni="123456789A" fechacv="2/23/2022">
+        <DatosPersonales>
+            <Nombre>Pepe</Nombre>
+            <Apellido1>Pepe</Apellido1>
+            <Apellido2>Pepe</Apellido2>
+            <Fechanac>3/4/1998</Fechanac>
+            <Direccion caracter="trabajo">
+                <Calle>Pepe</Calle>
+                <Localidad>Pepe</Localidad>
+                <CodigoPostal>Pepe</CodigoPostal>
+                <Pais>Pepe</Pais>
+            </Direccion>
+            <Direccion caracter="particular">
+                <Calle>Pepe</Calle>
+                <Localidad>Pepe</Localidad>
+                <CodigoPostal>Pepe</CodigoPostal>
+                <Pais>Pepe</Pais>
+            </Direccion>
+        </DatosPersonales>
+        <Idiomas>
+            <Idioma nivel="alto" caracter="materno"><nombreIdioma>Español</nombreIdioma></Idioma>
+            <Idioma nivel="medio" caracter="extranjero"><nombreIdioma>Ingles</nombreIdioma></Idioma>
+            <Idioma nivel="bajo" caracter="extranjero"><nombreIdioma>Frances</nombreIdioma></Idioma>
+        </Idiomas>
+    </CV>
+    <CV dni="123456789A" fechacv="2/23/2022">
+        <DatosPersonales>
+            <Nombre>Pepe</Nombre>
+            <Apellido1>Pepe</Apellido1>
+            <Apellido2>Pepe</Apellido2>
+            <Fechanac>3/4/1998</Fechanac>
+        </DatosPersonales>
+        <Idiomas>
+            <Idioma nivel="bajo" caracter="extranjero"><nombreIdioma>Frances</nombreIdioma></Idioma>
+        </Idiomas>
+    </CV>
+</curriculums>
