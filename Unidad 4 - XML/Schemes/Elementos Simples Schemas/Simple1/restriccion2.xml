@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumno
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="restriccion3.xsd">
+<nombre>juan</nombre>
+<dni>123456789A</dni>
+<direccion>San José 2</direccion>
+<edad>20</edad>
+<telefono>c-123456789</telefono>
+<sexo>M</sexo>
+</alumno> 
