@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="libreria">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="codigo" type="cod" />
+                <xs:element name="direccion"/>
+                <xs:element name="telefono"/>
+                <xs:element name="propietario">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombre"/>
+                            <xs:element name="telefono" type="telf" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="libro" minOccurs="1" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="titulo" type="xs:string"/>
+                            <xs:element name="autor" type="xs:string"/>
+                            <xs:element name="formato" type="format" minOccurs="0" maxOccurs="1"/>
+                            <xs:element name="publicacion" type="xs:string"/>
+                            <xs:element name="precio" type="xs:decimal"/>
+                            <xs:element name="cantidad" type="xs:integer"/>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="cod">
+        <xs:restriction base="xs:integer">
+            <xs:minExclusive value="1000"/>
+            <xs:maxExclusive value="9999"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="telf">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="9"></xs:totalDigits>
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="format">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Rústica"/>
+            <xs:enumeration value="Tapa blanda"/>
+            <xs:enumeration value="Tapa dura"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

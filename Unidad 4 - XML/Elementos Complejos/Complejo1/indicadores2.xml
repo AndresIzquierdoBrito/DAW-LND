@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alumnos
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="indicador2.xsd">
+    <alumno dni="111">
+        <nombre>Antonio Pérez</nombre>
+        <direccion>
+            <calle>Calle Fuente</calle>
+            <numero>4</numero>
+            <ciudad>Jabugo</ciudad>
+            <provincia>Huelva</provincia>
+        </direccion>
+        <telefono>
+            <!-- <fijo>959123456</fijo> -->
+            <movil>666123456</movil>
+        </telefono>
+    </alumno>
+    <alumno dni="222">
+        <nombre>María López</nombre>
+        <direccion>
+            <calle>Calle Mayor</calle>
+            <numero>1</numero>
+            <ciudad>Sevilla</ciudad>
+            <provincia>Sevilla</provincia>
+        </direccion>
+        <telefono>
+            <fijo>954123456</fijo>
+            <!-- <movil>666123456</movil> -->
+        </telefono>
+    </alumno>
+    <alumno dni="333">
+        <nombre>Manuel Martín</nombre>
+        <direccion>
+            <calle>Calle Nueva</calle>
+            <numero>2</numero>
+            <ciudad>Madrid</ciudad>
+            <provincia>Madrid</provincia>
+        </direccion>
+        <telefono>
+            <fijo>915123456</fijo>
+            <!-- <movil>666123456</movil> -->
+        </telefono>
+    </alumno>
+</alumnos>
