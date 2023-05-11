@@ -1,0 +1,147 @@
+clase{
+  background-color: Moccasin;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+id,
+alumno,
+modulo{
+  display: block;
+}
+
+id{
+  padding-left: .5em;
+  background-color: rgba(80%,50%,0%, 0.9);
+}
+
+curso::before{
+  content: "Curso:" attr(curso);
+  font-size: 20pt;
+  margin: .5em;
+}
+ciclo{
+  font-weight: lighter;
+}
+curso, anios{
+  font-size: 20pt;
+}
+
+anios::before{
+  content: "(" ;
+}
+anios::after{
+  content: ")";
+}
+
+ciclo{
+  font-size: 15pt;
+}
+
+modulos::before{
+  content: "Modulos del curso:";
+  font-size: 15pt;
+  background-color: Moccasin;
+  width: 110%;
+  display: block;
+  margin-left: -.75em;
+}
+
+modulos{
+  display: block;
+  margin: 2em;
+  background-color: yellowgreen;
+  width: 80%;
+}
+
+modulos modulo{
+  font-size: 14pt;
+  background-color: yellowgreen;
+  display: list-item;
+  list-style-type: square;
+  margin-left: 1.5em;
+}
+modulos modulo profesor persona {
+  font-size: 12pt;
+  color: red;
+  text-decoration: underline;
+}
+
+modulos modulo profesor::before{
+  content: "( ";
+}
+modulos modulo profesor::after{
+  content: " ) " attr(cargo);
+  color: black;
+  text-transform: uppercase;
+}
+alumnos::before{
+  content: "Alumnos:";
+  font-size: 15pt;
+}
+alumnos{
+  display: block;
+  margin: 1em;
+  width: 80%;
+}
+
+alumno{
+  margin: 0 1em 1em;
+  background-color: MediumSeaGreen;
+}
+
+alumno persona dni{
+  display: none;
+}
+
+alumno persona{
+  font-size: 14pt;
+  text-decoration: underline;
+}
+
+notas{
+  display: table;
+  margin-left: 7.5em;
+}
+
+notas modulo{
+  display: table-row;
+}
+notas nombre{
+  color: blue;
+}
+notas calificacion{
+  color: red;
+  font-weight: bold;
+  initial-letter: 2;
+}
+notas nombre, parcial, final, nota, calificacion{
+  display: table-cell;
+  padding: .25em;
+  background-color: #ccc;
+  border-bottom: 1px solid black;
+} 
+
+notas nombre{
+  width: 125px;
+}
+parcial{
+  width: 60px;
+}
+final{
+  width: 40px;
+}
+calificacion{
+  width: 150px;
+  font-variant: small-caps;
+}
+/* Colores utilizados:  
+  Moccasin
+  YellowGreen
+  rgba(80%,50%,0%, 0.9)
+  red
+  black
+  MediumSeaGreen
+  #CCC
+  blue
+Tipo de letra:
+  Helvetica */

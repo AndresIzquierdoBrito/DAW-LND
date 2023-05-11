@@ -3,21 +3,105 @@
     <xs:element name="discos">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="grupo" maxOccurs="unbounded">
-                    <xs:complexType>
-                        <xs:sequence>
-                            <xs:element name="nombre" type="xs:string"/>
-                            <xs:element name="miembro" type="xs:string" maxOccurs="unbounded"/>
-                            <xs:element name="nacionalidad" type="xs:string"/>
-                            <xs:element name="web" type="xs:string"/>
-                            <xs:element name="email" type="xs:string"/>
-
-                        </xs:sequence>
-                    </xs:complexType>
-                </xs:element>
+                <xs:element name="grupo" maxOccurs="unbounded" type="tipoGrupo"/>
+                <xs:element name="disco" maxOccurs="unbounded" type="tipoDisco"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>
+    <xs:complexType name="tipoGrupo">
+        <xs:sequence>
+            <xs:element name="nombre" type="tipoTexto"/>
+            <xs:element name="miembro" type="tipoTexto" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="nacionalidad" type="tipoTexto" minOccurs="0"/>
+            <xs:choice minOccurs="0">
+                <xs:sequence>
+                    <xs:element name="web" type="tipoPagina" />
+                    <xs:element name="email" type="tipoPagina">
+                    </xs:element>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="calle" type="tipoTexto" />
+                    <xs:element name="localidad" type="tipoTexto" />
+                </xs:sequence>
+            </xs:choice>
+        </xs:sequence>
+        <xs:attribute name="nom" type="tipoTexto"/>
+    </xs:complexType>
+    <xs:complexType name="tipoDisco">
+        <xs:sequence>
+            <xs:element name="interprete">
+                <xs:complexType>
+                    <xs:attribute name="nom" type="xs:string"/>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="titulo" type="xs:string"/>
+            <xs:element name="discografica" default="CBS" minOccurs="0">
+                <xs:simpleType>
+                    <xs:restriction base="tipoTexto">
+                        <xs:enumeration value="Sony" />
+                        <xs:enumeration value="CBS" />
+                        <xs:enumeration value="SIRE" />
+                        <xs:enumeration value="OTRAS" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="anio">
+                <xs:complexType>
+                    <xs:simpleContent>
+                        <xs:extension base="tipoAnyo">
+                            <xs:attribute name="mes" type="mes"/>
+                        </xs:extension>
+                    </xs:simpleContent>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="stock">
+                <xs:simpleType>
+                    <xs:restriction base="xs:integer">
+                        <xs:minInclusive value="0" />
+                        <xs:maxInclusive value="200" />
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+        </xs:sequence>
+        <xs:attribute name="precio">
+            <xs:simpleType>
+                <xs:restriction base="xs:decimal">
+                    <xs:fractionDigits value="2" />
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:simpleType name="tipoTexto">
+        <xs:restriction base="xs:string">
+            <xs:maxLength value="50" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoPagina">
+        <xs:restriction base="xs:string">
+            <xs:pattern value=".+ponprecioamimusica.org.*" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="mes">
+        <xs:restriction base="tipoTexto">
+            <xs:enumeration value="enero" />
+            <xs:enumeration value="Febrero" />
+            <xs:enumeration value="Marzo" />
+            <xs:enumeration value="Abril" />
+            <xs:enumeration value="Mayo" />
+            <xs:enumeration value="Junio" />
+            <xs:enumeration value="Julio" />
+            <xs:enumeration value="Agosto" />
+            <xs:enumeration value="Septiembre" />
+            <xs:enumeration value="Octubre" />
+            <xs:enumeration value="Noviembre" />
+            <xs:enumeration value="Diciembre" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="tipoAnyo">
+        <xs:restriction base="xs:integer">
+            <xs:totalDigits value="4" />
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
 
 
