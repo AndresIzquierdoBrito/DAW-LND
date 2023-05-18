@@ -1,0 +1,48 @@
+Define the document type:
+<!DOCTYPE rootElementName SYSTEM "filename.dtd">
+Define an element:
+<!ELEMENT elementName (childElement)*>
+Define an empty element:
+<!ELEMENT elementName EMPTY>
+Define a mixed content element:
+<!ELEMENT elementName (#PCDATA | childElement)*>
+Define child elements:
+<!ELEMENT childElementName (#PCDATA)>
+Define child elements with optional occurrence:
+<!ELEMENT childElementName (#PCDATA)?>
+Define child elements with mandatory occurrence:
+<!ELEMENT childElementName (#PCDATA)+>
+Define child elements with unbounded occurrence:
+<!ELEMENT childElementName (#PCDATA)*>
+Define attributes:
+<!ATTLIST elementName attributeName attributeType defaultValue>
+Define an ID attribute:
+<!ATTLIST elementName attributeName ID #REQUIRED>
+Define an IDREF attribute:
+<!ATTLIST elementName attributeName IDREF #REQUIRED>
+Define an IDREFS attribute:
+<!ATTLIST elementName attributeName IDREFS #REQUIRED>
+Define an ENTITY attribute:
+<!ATTLIST elementName attributeName ENTITY #REQUIRED>
+Define an ENTITIES attribute:
+<!ATTLIST elementName attributeName ENTITIES #REQUIRED>
+Define a NMTOKEN attribute:
+<!ATTLIST elementName attributeName NMTOKEN #REQUIRED>
+Define a NMTOKENS attribute:
+<!ATTLIST elementName attributeName NMTOKENS #REQUIRED>
+Define an enumerated attribute:
+<!ATTLIST elementName attributeName (value1 | value2 | value3) defaultValue>
+Define an attribute with optional value:
+<!ATTLIST elementName attributeName attributeType defaultValue>
+Define an attribute with fixed value:
+<!ATTLIST elementName attributeName attributeType "fixedValue">
+Define an external entity:
+<!ENTITY entityName SYSTEM "filename.xml">
+Define an internal entity:
+<!ENTITY entityName "entityValue">
+Define a parameter entity:
+<!ENTITY % entityName "entityValue">
+Use a parameter entity in the DTD:
+<!DOCTYPE rootElementName [
+<!ENTITY % entityName "entityValue">
+]>

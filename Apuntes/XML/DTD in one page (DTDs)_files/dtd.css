@@ -1,0 +1,142 @@
+/* CSS Document */
+
+body {
+ background-color: #ffffff;
+ color: #000000;
+}
+
+td {
+ text-align: center;
+ vertical-align: top;
+}
+
+.empty {
+ width: 1px;
+}
+
+.norm {
+ width: 150px;
+}
+
+.bigtitle {
+ background-color: #ffffff;
+ color: #167216;
+ font-size: 4em;
+ font-weight: bold;
+ text-align: left;
+}
+
+.code {
+ background-color: #e6f0e6;
+ color: #000000;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: left;
+}
+
+.contents {
+ border-color: #167216;
+ border-style: solid;
+ border-width: thick;
+ color: #167216;
+ background-color: #e6f0e6;
+ text-align: left;
+}
+
+.description {
+ background-color:#e6f0e6;
+ color: #000000;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: justify;
+}
+
+.example {
+ background-color:#e6f0e6;
+ color: #000000;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: left;
+}
+
+.note {
+ font-weight: bold
+}
+
+.rules {
+ font-weight: bold
+}
+
+.servo_title {
+ background-color: #167216;
+ color: #FFFFFF;
+ font-size: 1.5em;
+ text-align: center;
+}
+
+.servo {
+ background-color:#e6f0e6;
+ color: #000000;
+ padding-left: 10px;
+ padding-right: 10px;
+ text-align: left;
+}
+
+.title {
+ background-color: #167216;
+ color: #FFFFFF;
+ font-size: 1.5em;
+}
+
+.xml_declaration_table {
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+ text-align: center;
+ vertical-align: top;
+}
+
+.xml_declaration_table caption {
+ background-color: #167217;
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+ color: #FFFFFF;
+ font-weight: bold;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.xml_declaration_table .capt {
+ background-color: #167217;
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+ color: #FFFFFF;
+ font-weight: bold;
+ text-align: center;
+ vertical-align: middle;
+}
+
+.xml_declaration_table td {
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+ text-align: justify
+}
+
+.xml_declaration_table tr {
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+}
+
+.xml_declaration_table th {
+ border-color: #167216;
+ border-width: thin;
+ border-style: solid;
+ font-weight: bold;
+ text-align: center;
+ vertical-align: middle;
+ width: 100%;
+}
